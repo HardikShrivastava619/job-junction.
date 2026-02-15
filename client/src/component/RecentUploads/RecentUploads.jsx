@@ -6,7 +6,7 @@ import { MdAccountCircle } from 'react-icons/md';
 import { FaRegCommentDots } from 'react-icons/fa';
 import { Link, useParams } from 'react-router-dom';
 import './RecentUpload.css'
-import {recentUploadLogic} from './recentUploads.js';
+import {recentUploadLogic} from './RecentUploads.js';
 import { useEffect } from 'react';
 
 const RecentUploads = () => {
