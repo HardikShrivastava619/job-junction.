@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './EditOtherDet.css'
+import './EditOtherdet.css'
 import { RxCross1 } from "react-icons/rx";
 import { useDispatch, useSelector } from 'react-redux';
 import { loginSliceAction } from '../../../store/loginSlice';
