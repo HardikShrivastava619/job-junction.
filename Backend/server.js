@@ -14,6 +14,8 @@ import messageRoutes from './routes/MessageRoutes.js'
 import jobRoutes from './routes/JobRoutes.js'
 import notfRoutes from './routes/NotificationRoutes.js'
 import CommentRoutes from './routes/CommentRoutes.js'
+import path from "path";
+import { fileURLToPath } from "url";
 
 import { Server } from 'socket.io';
 import http from 'http';
@@ -23,27 +25,31 @@ dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server , {
-  cors: {
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST"]
-  }
-})
-
-
-app.set('io', io); 
-
 app.use(express.json());
 app.use(morgan('dev'));
 
 
+const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
+
+const io = new Server(server, {
+  cors: {
+    origin: allowedOrigin,
+    methods: ["GET", "POST"]
+  }
+});
+
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: allowedOrigin,
   methods: "GET,PUT,POST,DELETE",
   credentials: true,
 };
 
-app.use(cors(corsOptions)); 
+app.use(cors(corsOptions));
+
+
+app.set('io', io); 
+
+
 
 
 app.use("/api/user",  userRoutes)
@@ -57,6 +63,18 @@ app.use("/api/message",messageRoutes )
 app.use("/api/job",jobRoutes )
 app.use("/api/comment",CommentRoutes )
 app.use("/api/notf",notfRoutes )
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve frontend build
+app.use(express.static(path.join(__dirname, "../client/dist")));
+
+// Catch-all route for React
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+});
 
 
 
