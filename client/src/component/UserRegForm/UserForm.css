@@ -1,0 +1,42 @@
+.google-btn:hover{
+      transition:  0.5s ease; 
+    transform: scale(1.1,1.1);
+  background-image: linear-gradient(135deg,#a79bbd  ,#83a2b7 )
+}
+
+ .google-btn {
+    color: #357ae8;
+    padding: 6vh 5vw;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: transparent;
+display: flex;
+flex-direction: column;
+border: none;    
+}
+
+
+.userprofpic{
+  border-radius: 50% !important;
+  width: 25vw;
+height: 37vh;
+}
+
+.google-img{
+width: 18vw;
+height: 28vh;
+
+}
+
+
+.FaUserEdit{
+    margin-left: 5vw;
+}
+
+.IoMdPersonAdd{
+margin-right: 3vw;
+}

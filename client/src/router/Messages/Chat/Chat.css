@@ -1,0 +1,231 @@
+.chat-main{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    
+} 
+
+
+.nochatFound-imgcont{
+    background-color:rgba(192, 192, 192, 0.296);
+}
+
+
+.chat-maincont{
+background-image: url('../../../public/images/chatAppBGImg.webp');
+    height: 100%;
+    width: 73%;
+        margin-left: 28.8vw;
+display: flex;
+flex-direction: column;
+}
+
+.chat-header{
+    height: 15%;
+    width: 100%;
+    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.105);
+}
+
+
+
+.deleteMSg{
+    margin-right: 1.5vw;
+font-size: x-large;
+cursor: pointer;
+height: 6.5vh;
+color: #7037e2;
+width: 3.5vw;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+transition: 2ms;
+}
+
+
+.deleteMSg:hover{
+ background-color: #71b7e637;
+transform: scale(1.2);
+}
+
+
+
+.chat-img{
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+margin-right: .5vw;
+}
+
+
+.chat-userName{
+display: flex;
+}
+
+.chat-body{
+display: flex;
+flex-direction: column-reverse;
+    height: 72%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding: 2vh 0vw 2vh 0vw;
+}
+
+.chatinput-cont{
+height: 12%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-top: 1px solid rgba(192, 192, 192, 0.551);
+}
+
+.chatinput{
+    height: 100%;
+    width: 70%;
+display: flex;
+align-items: center;
+}
+
+.chat-typemsginput{
+height: 100%;
+border: none;
+
+}
+
+
+.smilecont{
+    color: #7037e2;
+    width: 10%;
+    font-size: 1.5rem;
+    display: flex;
+justify-content: space-around;
+}
+
+.send-btns{
+background-image: linear-gradient(50deg,#71b7e6  , #9370db ) ;
+    color: white;
+    border: none;
+    padding: 1.5vh 2.5vw;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+transition: 5ms;
+border-radius: 10%;
+}
+
+
+.send-btns:hover{
+transform: scale(1.01);
+}
+
+
+.FaRegSmileWink{
+    cursor: pointer;
+    transition: 2ms;
+
+}
+
+.FaRegSmileWink:hover{
+transform: scale(1.2);
+}
+
+
+.msg-div{
+display: flex;
+gap: .8vw;
+margin-bottom: 4vh;    
+width: 100%;
+padding-left: 1.5vw;
+}
+
+
+.ourMsg-div{
+display: flex;
+margin-bottom: 4vh;
+width: 100%;
+gap: .8vw;
+flex-direction: row-reverse;
+padding-right: 1.5vw;
+}
+
+.selectMSg{
+display: flex;
+margin-bottom: 4vh;
+    width: 100%;
+gap: .8vw;
+flex-direction: row-reverse;
+padding-right: 1.5vw;
+background-color: rgba(0, 0, 255, 0.241);    
+}
+
+
+.msg-txt{
+    background-color: rgb(110, 67, 251) !important;
+        color: white !important;
+    border-radius: 10px;
+min-width: 10vw;
+max-width: 30vw;
+  display: flex;
+padding: .5vh 1vw .5vh 1vw;
+align-items: center;
+}
+
+
+
+.ourMsg-txt{
+        background-color: #309ae1  ;
+        color: white;
+    border-radius: 10px;
+min-width: 10vw;
+max-width: 30vw;
+  display: flex;
+  flex-direction: column !important;
+padding: 1vh 1vw 1vh 1vw;
+
+}
+
+
+.msg-para{
+    width: 100%;
+    color: white;
+    
+display: flex !important;
+flex-wrap: wrap !important;
+
+}
+
+
+.chat_seen{
+    align-self: flex-end;
+    font-size: small;
+
+}
+
+
+.msg-img{
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+
+.typing-msg-div{
+    background-color: white;
+padding: 2vh 2vw 2vh 2vw;
+border-radius:50%;
+border-bottom-left-radius: 10%;
+border-top-left-radius: 10%;
+
+}
+
+
+.BsFillChatTextFill {
+    font-size: 4rem;
+color: rgb(110, 67, 251) !important;
+transition: 1s;
+transform: scale(1.2);
+
+
+}

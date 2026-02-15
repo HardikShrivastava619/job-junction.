@@ -1,0 +1,116 @@
+.entForm{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.box1{
+    height: 70%;
+width: 48% ;  
+background-color: rgba(240, 248, 255, 0.759);
+border-radius: 0% 50% 50% 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.box2{
+    height: 70%;
+width: 48% ;  
+background-color: rgba(240, 248, 255, 0.759);
+border-radius: 50% 0 50% 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+.reg-input{
+width: 43%;
+}
+
+
+.office-cont{
+    width: 48%;
+height: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.ImOffice{
+    color: aliceblue;
+font-size: 15rem;
+
+}
+
+.reg-arrowbtn{
+font-size: xx-large;
+color: aliceblue;
+transition: 1s;
+cursor: pointer;
+}
+
+.reg-arrowbtn:hover{
+transform: scale( 2 );
+}
+
+
+
+.arrow-cont{
+    width: 50%;
+    height: 10%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.fabranch{
+    width: 50%;
+    padding-left: 6vw;
+}
+
+
+.ent-reg-radio{
+width: 50%;
+font-size: xx-large;
+}
+
+
+.ent-reg-radio-input{
+width: 5vw !important;
+height: 5vh !important;
+}
+
+.ent-reg-lable{
+margin-left: 1vw;
+}
+
+.form-control-textarea{
+    width:100%;
+height: 15vh !important;
+}
+
+
+.textarea-cont{
+    width: 65%;
+display: flex;
+flex-direction: column;
+}
+
+.chro-icon{
+    margin-left: 4vw;
+}
+
+.FaChessKing{
+    margin-bottom: 4vh;
+}

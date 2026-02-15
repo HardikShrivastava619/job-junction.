@@ -1,0 +1,82 @@
+.appPageeMain{
+    width: 70vw;
+height: 90vh;
+display: flex;
+flex-direction: column;
+overflow-y: auto;
+gap: 4vh;
+scrollbar-width: thin;
+align-items: center;
+padding-top: 5vh;
+}
+
+
+.applicantPage-subdiv{
+    width: 70%;
+ max-height: 20vh;
+display: flex;
+flex-direction: row;
+}
+
+
+.applic_sec_maincont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.jobappliappcont{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.675);
+height: 90%;
+align-items: center;
+width: 95%;
+justify-content: space-between;
+}
+
+
+.chekapplicantPageprofilebtn{
+border-radius: 30px;
+min-width: 10vw;
+}
+
+.trapezium {
+  width: 40vw;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+ border-bottom: 40px solid transparent  ;
+margin-top: -10vh;
+}
+
+
+.trapezium:hover{
+    border-bottom-color:rgb(249, 205, 205) ;
+cursor: pointer;
+
+}
+
+
+.applicstatus-div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    color: gray;
+}
+
+
+.applicstatus-shortlisted{
+background-color: rgb(188, 250, 188);
+}
+
+.applicstatus-intrseted{
+background-color: rgb(188, 250, 250);
+}
+
+.applicstatus-rejected{
+    background-color: rgb(250, 169, 169);
+}

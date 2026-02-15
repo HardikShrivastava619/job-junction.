@@ -1,0 +1,35 @@
+.outlet-cont{
+height: 90vh;
+width: 100%;
+display: flex;
+
+}
+
+
+.overlay-loader {
+  position: absolute;        /* absolute */
+  inset: 0;                  /* top:0; right:0; bottom:0; left:0 */
+  background-color: transparent; /* bg-transparent */
+  background-color: rgba(0, 0, 0, 0.3); /* bg-opacity-30 (semi-transparent overlay) */
+  backdrop-filter: blur(4px); /* backdrop-blur-sm */
+  display: flex;             /* flex */
+  justify-content: center;   /* justify-center */
+  align-items: center;       /* items-center */
+  z-index: 50;               /* z-50 */
+}
+
+.overlay-loader p {
+  font-family: "Poppins", sans-serif;   /* modern, clean font */
+  font-size: 1.1rem;                    /* slightly larger text */
+  font-weight: 500;                     /* medium weight */
+  color: white;                          /* dark gray for readability */
+  margin: 0.5rem 0;                     /* spacing between lines */
+  text-align: center;                   /* center align */
+  letter-spacing: 0.5px;                /* subtle spacing */
+}
+
+.overlay-loader p:first-child {
+  font-size: 1.3rem;                    /* emphasize first line */
+  font-weight: 600;                     /* bold */
+  color: #007bff;                       /* Bootstrap primary blue */
+}

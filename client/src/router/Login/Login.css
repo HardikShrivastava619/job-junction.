@@ -1,0 +1,228 @@
+.login_main{
+    width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(135deg ,#71b7e6,#9370db );
+}
+
+.create-acc{
+    text-decoration: none;
+    font-size: small;
+    margin-top: 1vh;
+text-align: center;
+}
+
+.create-acc:hover{
+text-decoration: underline;
+}
+
+.IoReloadOutline-captcha{
+    font-weight: 900;
+    cursor: pointer;
+    font-size: large;
+}
+
+.IoReloadOutline-captcha:active{
+cursor: progress;    
+}
+
+
+.captcha_info{
+    margin-bottom: 1.5vh;
+color: rgb(29, 191, 29);
+
+text-align: center;
+}
+
+.login-form{
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+max-height: 60%;
+width: 30%;
+padding: 3vh;
+color: #9370db;
+background-color: white;
+}
+
+
+.login_inputs{
+    min-width: 80% !important;
+}
+
+.login-heading{
+    color: #9370db;
+}
+
+.background-img-login{
+    width: 100%;
+}
+
+
+
+.btn-Login_Submit{
+    width: 80%;
+    background-image: linear-gradient(135deg ,#71b7e6 ,#9370db );
+    align-self:  center !important;
+    padding: .6vh;
+    border-radius: .2rem;
+    color: white;
+    border: none;
+transition: 0.3s ease ;
+}
+
+
+
+.btn-Login_Submit:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+
+
+
+
+@media (min-width:300px) and (max-width:600px)  {
+    
+
+    .login_main{
+width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(135deg ,#71b7e6,#9370db );
+        position: fixed;
+        
+        }
+        .login-form{
+            border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 56%;
+        width: 80%;
+        padding: 3vh;
+        color: #9370db;
+        background-color: white;
+        }
+        
+        
+        .login_inputs{
+            width: 80% !important;
+        
+        }
+        
+        .login-heading{
+            color: #9370db;
+       font-size: small !important;
+        }
+        
+        .login-btn{
+            width: 80%;
+            align-self: center;
+        }
+        
+
+}
+
+
+
+
+
+
+
+@media (min-width:600px) and (max-width:900px)  {
+    
+
+    .login_main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(135deg ,#71b7e6,#9370db );
+        position: fixed;
+        
+        }
+        .login-form{
+            border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 56%;
+        width: 60%;
+        padding: 3vh;
+        color: #9370db;
+        background-color: white;
+        }
+        
+        
+        .login_inputs{
+            width: 80% !important;
+        
+        }
+        
+        .login-heading{
+            color: #9370db;
+       font-size: small !important;
+        }
+        
+        .login-btn{
+            width: 80%;
+            align-self: center;
+        }
+        
+
+}
+
+
+
+
+
+@media (min-width:900px) and (max-width:1200px)  {
+    
+
+    .login_main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(135deg ,#71b7e6,#9370db );
+        position: fixed;
+        
+        }
+        .login-form{
+            border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 56%;
+        width: 50%;
+        padding: 3vh;
+        color: #9370db;
+        background-color: white;
+        }
+        
+        
+        .login_inputs{
+            width: 80% !important;
+        
+        }
+        
+        .login-heading{
+            color: #9370db;
+       font-size: small !important;
+        }
+        
+        .login-btn{
+            width: 80%;
+            align-self: center;
+        }
+        
+
+}

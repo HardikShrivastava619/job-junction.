@@ -1,0 +1,345 @@
+.jobDdetailsMain{
+    width: 75vw;
+    height: 90vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: auto !important;
+scrollbar-width: thin !important;
+}
+
+
+.temper-stop-btn-cont{
+width: 100%;
+height: 15vh;
+display: flex;
+justify-content: space-between;
+}
+
+
+.tempr-btn{
+margin: 1rem;
+}
+
+
+
+
+.card-jobdetails{
+    margin-top:6vh;
+    width: 80%;
+height: 73%;
+}
+
+.jobdet-comaonycover{
+    width: 13vw;
+    height: 30vh;
+}
+
+.jobdet-subdiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobdet-box1{
+    width: 70%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+
+    }
+
+.jobdet-box2{
+    width: 30%;
+        display: flex;
+    flex-direction: column;
+ align-items: center;
+    padding:2vh 0vw 5vh 0vw;
+border-left: .1px solid rgba(192, 192, 192, 0.505);
+height: 95%;
+justify-content: space-between;
+
+}
+
+.cite{
+    display: block;
+}
+
+.remote0duv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.desc{
+height: 25vh;
+}
+
+.MdOutlineTravelExplore{
+    font-size: large;
+    margin-bottom: .5vh;
+}
+
+.skillcont{
+    display: flex;
+    align-items: flex-end !important;
+    gap: 1vw;  
+height: 12.5%;
+border-bottom:1px solid rgb(203, 175, 235) ;
+}
+
+.skilss{
+    gap: 1vw;
+    display:flex;
+align-items: flex-end;
+height: 100%;
+position: relative;
+top: 1.3vh;
+}
+
+
+.jobdetLocation{
+    height: 100%;
+display: flex;
+align-items: flex-end;
+
+}
+
+
+.jobDet-header-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobDet-header{
+margin-top: 1vh;
+}
+
+.locationdiv{
+    display: flex;
+    width: 100%;
+gap: .4vw;
+align-items: center;
+height: 10%;
+}
+
+.jobdetapplynow{
+    margin-bottom: 1vh;
+}
+
+.jobdetappliednow{
+    margin-bottom: 5vh;
+padding: 1vh 1.6vw;
+}
+
+
+.applicant-cont{
+    width: 65vw;
+margin-top: 10vh;
+margin-bottom: 5vh;
+}
+
+
+.Applicantheadd{
+    width: 100%;
+}
+
+.applicant-sundiv{
+    height: 100%;
+    padding-bottom: 2vh;
+    gap: 2vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.applicant-subdiv2{
+display: flex;
+flex-direction: row;
+height: 80%;
+border:1px solid silver;
+width: 95%;
+transition: 1s;
+cursor: pointer;
+}
+
+.applicant-subdiv2:hover{
+    transform: scale(1.05);
+}
+
+
+.applicant-subdiv2-rejected{
+display: flex;
+flex-direction: row;
+height: 80%;
+border:1px solid silver;
+width: 95%;
+transition: 1s;
+cursor: pointer;
+background-color: rgb(253, 190, 190);
+}
+
+
+.applicant-subdiv2-select{
+display: flex;
+flex-direction: row;
+height: 80%;
+border:1px solid silver;
+width: 95%;
+transition: 1s;
+cursor: pointer;
+background-color: rgb(216, 253, 190);
+}
+
+
+.applicant-subdiv2-intrested{
+display: flex;
+flex-direction: row;
+height: 80%;
+border:1px solid silver;
+width: 95%;
+transition: 1s;
+cursor: pointer;
+background-color: rgb(190, 245, 253);
+}
+
+
+.userapplicantimg{
+    width: 5vw;
+    height: 10vh;
+border-radius: 50%;
+}
+
+.userappcont{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.675);
+height: 13vh;
+align-items: center;
+width: 100%;
+justify-content: space-between;
+}
+
+.chekapplicantprofilebtn{
+    padding: 1vh 1vw;
+border-radius: 2rem;
+}
+
+.applicant-namecont{
+align-items: center;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 3vh;
+}
+
+.applicantName{
+position: relative;
+top: 1.5vh;    
+}
+
+
+
+.MdAttachEmail{
+    font-size: x-large;
+    color: orange;
+cursor: pointer;
+transition: 1s;
+}
+.MdAttachEmail:hover{
+    transform: scale(1.5);
+}
+
+
+.compn-rescont{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: -2vh;
+}
+
+.trap1{
+    width: 30%;
+    height: 0%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+border-bottom: 45px solid rgb(161, 227, 151);
+font-size: small;
+display: flex;
+justify-content: center;
+}
+
+.trap1{
+    width: 30%;
+    height: 0%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+border-bottom: 45px solid transparent;
+font-size: small;
+display: flex;
+justify-content: center;
+cursor: pointer;
+}
+
+
+.trap1:hover{
+    
+border-bottom: 45px solid rgb(214, 250, 208);
+}
+
+.trap-p{
+position: relative;
+top: 2vh;
+display: flex;
+gap: .5vw;
+}
+
+.type-p-rx{
+margin-top: .5vh;
+}
+
+
+
+.trap2{
+    width: 30%;
+    height: 0%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+border-bottom: 45px solid transparent;
+font-size: small;
+display: flex;
+justify-content: center;
+cursor: pointer;
+
+}
+
+
+.trap2:hover{
+    
+border-bottom: 45px solid rgb(208, 246, 250);
+}
+
+
+
+.trap3{
+
+    width: 30%;
+    height: 0%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+border-bottom: 45px solid transparent;
+font-size: small;
+display: flex;
+justify-content: center;
+cursor: pointer;
+}
+
+
+.trap3:hover{
+    
+border-bottom: 45px solid rgb(253, 166, 166);
+}

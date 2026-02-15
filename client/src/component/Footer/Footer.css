@@ -1,0 +1,52 @@
+.footer{
+    position: relative;
+    top: 10vh;
+    width: 100% !important;
+}
+
+.footer-heading-container{
+    display: flex !important;
+    justify-content: center !important;
+    background-color: #9370db;
+
+}
+
+.footer-body{
+    
+background-image: linear-gradient(135deg ,#9370db,#71b7e6 );
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.MoreDetailsPageFooterMainDiv{
+    width: 100%;
+background-image: linear-gradient(135deg ,#9370db,#71b7e6 );
+}
+
+
+
+
+
+@media (min-width:300px) and (max-width:600px){
+    .footer{
+        position: relative;
+        top: 10vh;
+        width: 100% !important;
+    }
+
+    
+.footer-heading-container{
+    display: flex !important;
+    justify-content: center !important;
+    background-color: #9370db;
+
+}
+
+.footer-body-para{
+    
+    font-size: small;
+
+}
+
+
+}

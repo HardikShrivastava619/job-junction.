@@ -1,0 +1,93 @@
+
+.emplo-btn{   
+     width: 22%;
+    height: 70%;
+display: flex;
+gap: 10vh;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 15%;
+font-size: 1.5rem;
+background-image: linear-gradient(135deg,#6129c9  ,#2386c8 );
+box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3)
+}
+
+
+.hirerbtn{
+
+box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+   
+    width: 22%;
+    height: 70%;
+display: flex;
+gap: 10vh;
+flex-direction: column;
+border: none;
+
+justify-content: center;
+align-items: center;
+border-radius: 15%;
+font-size: 1.5rem;
+    background-image: linear-gradient(310deg,#6129c9  ,#2386c8 );
+}
+
+
+.emplo-btn:hover{
+background-image: linear-gradient(135deg,  #108adb , #5712d7   );
+}
+
+.hirerbtn:hover{
+background-image: linear-gradient(135deg,#5712d7  ,#108adb );
+
+}
+
+
+
+
+.two-btn-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+
+.fausertie{
+color: white;
+    font-size: 10rem;
+}
+
+
+.empl-head-btn{
+background-color: transparent;
+  border: 3px solid white;
+  width: 80%;
+  border-radius: 2rem;
+  padding: 0.6rem;
+  color: white;
+  font-size: 1.2rem;}
+
+
+
+  .register_loader{
+    background-image: linear-gradient(135deg ,#71b7e6 ,white );
+    position: relative;
+    
+    width: 30%;
+    animation: moveRight 1s linear infinite;
+  }
+  
+  @keyframes moveRight {
+    0% {
+        transform: translateX(-100%); /* Start outside on the left */
+    }
+    100% { 
+        transform: translateX(100%); /* End outside on the right */
+    }
+  }
+
+

@@ -1,0 +1,610 @@
+.more-details-main {
+    width: 100%;
+    max-height: 90vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: auto;
+scrollbar-width: none;
+
+}
+
+
+.more-details-main-subdiv{
+    margin-top: 5vh;
+
+    width: 70%;
+min-height: 90vh !important;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.more-details-background-img {
+    height: 27vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, #9370db, gold);
+}
+
+
+
+
+
+.more-details-user-name {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -17vh;
+         text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 16.2vh;
+width: 100%;
+}
+
+.mediLinksAndFollBtnCont{
+    display: flex;
+justify-content: space-between;
+
+width: 95%;
+align-self: center;
+}
+
+
+.socialMediaLinks{
+gap: 1.5vw;
+font-size: 1.2rem;
+width: 57.5%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+
+}
+
+
+.follwBtn{
+width: 20%;
+border-radius: 1rem;
+}
+
+.MdAccountCircle-details-page {
+    font-size: 13rem;
+margin-top: -16vh;
+    z-index: 2;
+}
+
+
+
+.img-details-page{
+    position: relative;
+    bottom: 5vh;
+    left: 1vw;
+margin-top: -10.5vh;
+    z-index: 2;
+width: 11rem;
+height: 11rem;
+border-radius: 50%;
+margin-left: .5vw;
+}
+
+/* About Me Container */
+.detalis-aboutme-container {
+    width: 74%;
+    height: 22.5vh;
+    padding-top: 1vh;
+text-align: center;
+padding: 0vh 1.3vw;
+    align-self: center;
+    margin-top: -10vh; 
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+/* About Me Text */
+.detalis-aboutme-heading {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Info Container */
+.more-details-info-container{
+    width: 100%;
+    height: 36vh;
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;
+border: 1px solid silver;
+}
+
+
+.deta-cont{
+    display: flex;
+    height: 90%;
+    width: 50%;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.user-info-moredetailpage{
+display: flex;
+width: 90%;
+justify-content: space-around;
+height: 20%;
+}
+
+
+
+.info-para-headings{
+    width: 30%;
+    font-size: large;
+height: 100%;
+display: flex;
+align-items: center;
+}
+
+
+
+.info-para{
+    display: flex;
+align-items: center;
+    
+height: 100%;
+    width:55%;
+    overflow-wrap: anywhere;
+    font-size: medium;
+    color:#9370db ;
+}
+
+
+.info-para-other-user{
+    width: 45%;
+    
+    display: flex;
+align-items: center;
+    
+height: 100%;
+    width:43%;
+    overflow-wrap: anywhere;
+    font-size: medium;
+    color:#9370db ;
+}
+
+
+.more-detai-TbEdit{
+font-size: 1.2rem;
+display: flex;
+align-items: center;
+height: 100%;
+cursor: pointer;
+width: 5%;
+}
+
+
+.more-detai-TbEdit:hover{
+transform: scale(1.2,1.1);    
+    font-size: 1.5rem;  
+border-radius: 5px;    
+}
+    
+
+
+
+.more-deta-small{
+    margin-left: 1vw;
+
+}
+
+
+
+.detalis-aboutme-para {
+    padding-left: 0.5vw;
+}
+
+
+
+
+
+
+/*   second Main div          */
+
+.profile-second-mainddiv{
+    width: 98%;
+    margin-top:5vh;
+    display: flex;
+    justify-content: space-around;
+    min-height: 150vh;
+}
+
+.educ-div{
+width: 50%;
+    height: 100%;
+
+}
+
+
+.branch-license-div{
+width: 50%;
+    height: 100%;
+overflow-y: auto;
+scrollbar-width: thin;
+scrollbar-color:rgba(167, 70, 203, 0.297) transparent;
+
+}
+
+
+
+.collage-head{
+    margin: 0;
+    margin-left: 3vw;
+}
+
+
+.degree-para{
+    
+    font-size: large;
+    margin-left: 4vw;
+}
+
+.duration-small{
+height: 100%;
+    font-size: small;
+    margin-left: .5vw;
+}
+
+.marksheet-img{
+width: 2vw;
+height: 4vh;
+}
+
+.educ-det-cont{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vh;
+    border-bottom: 1px solid silver;
+width: 100%;    
+}
+
+
+.form-educdetcont{
+height: 85%;
+overflow-y: auto;
+scrollbar-width: thin;
+scrollbar-color:skyblue #9370db ;
+
+}
+
+.marksheet-img{
+align-self: center;
+height: 25vh;
+width: 10vw;
+margin-bottom: 3vh;
+}
+
+
+
+.contact-details-cont{
+    display: flex;
+    flex-direction: column;
+width: 70%;
+    gap: 3vh;
+    height: 30%;
+}
+
+
+.contact-para-headings{
+    width: 20%;
+margin: 0;
+height: 100%;
+display: flex;
+align-items: center;
+}
+
+.contact-det{
+    display: flex;
+    border-bottom: 1px solid silver;
+   align-items: end;
+justify-content: space-between;
+width: 100%;
+height: 5vh;
+
+}
+
+
+.contact-detForm{
+    display: flex;
+    border-bottom: 1px solid silver;
+   align-items: end;
+justify-content: space-between;
+width: 100%;
+height: 5vh;
+margin-top: 2vh;
+padding-bottom: 1vh;
+}
+
+.skills-contact-det{
+    display: flex;
+    border-bottom: 1px solid silver;
+   align-items: end;
+   gap: 2vw;
+width: 100%;
+height: 5vh;
+}
+
+
+
+.contact-det-para{
+color:#9370db ;
+    height: 100%;
+    width: 50%;
+display: flex;
+align-items: center;
+margin: 0;
+}
+
+.contact-det-para-other-user{
+color:#9370db ;
+    height: 100%;
+    width: 70%;
+display: flex;
+align-items: center;
+margin: 0;
+}
+
+
+
+.contact-detai-TbEdit{
+    height: 100%;
+font-size: 1.2rem;
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: 2ms;
+}
+
+.contact-detai-TbEdit:hover{
+ 
+    transform:scale(1.3,1.3);
+}
+
+.cont-main-div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+
+}
+
+
+.skills-cont{
+    width: 90%;
+    height: 35%;
+    margin-top: 4vh ;
+padding-left: 5vw;
+}
+
+
+
+.skills-para-headings{
+    width: 35%;
+margin: 0;
+height: 100%;
+display: flex;
+align-items: center;
+
+}
+
+.saveSkillBtn{
+    margin-left: -2.8vw;
+margin-bottom: .2vh;
+}
+
+
+.stars-div{
+gap: .5vw;
+    height: 100%;
+    width: 25%;
+display: flex;
+align-items: center;
+transition: 1s;
+}
+
+.stars-div:hover{
+    transform: scale(1.2);
+}
+
+.icon-container {
+display: flex;
+align-items: center;  
+width: 35%;
+height: 100%;
+gap: 2vw;
+justify-content: end;
+padding-right: .5vw;
+}
+
+.tooltip {
+    visibility: hidden;
+    margin-right: -2vw;
+    background-color: #9370db;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+
+
+
+
+.icon-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.skills-subcont{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    height: 60%;
+        overflow-y: auto;
+    scrollbar-width: thin;
+overflow-x: hidden;
+
+scrollbar-color:skyblue #9370db ;
+}
+
+
+.lang-cont{
+    padding-left: 5vw;
+    width: 90%;
+    margin-bottom: 1vh;
+    height: 30%;
+overflow-y: auto;
+scrollbar-width: thin;
+scrollbar-color:skyblue #9370db ;
+}
+
+
+
+
+
+/*  third Main div          */
+
+
+
+.moredet-malefemal{
+    font-size: xx-large;
+}
+
+.tbeditsec{
+    float: right;
+    position: relative;
+    top: 3vh;
+    right: .5vw;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.tbeditsec:hover{
+transform: scale(2);
+}
+
+
+.skillsubCont{
+    width: 92%;
+    padding-right: 1.3vw;
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+margin-bottom: 1vw;
+
+
+}
+
+.RxPlus-cont{
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid silver;
+
+}
+
+.RxPlus-subCont{
+    width: 10%;
+    height: 100% !important;
+display: flex;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: end;
+}
+
+.RxPlus{
+font-size: xx-large;
+    color:#9370db ;
+cursor: pointer;
+transition: 1s;
+}
+
+
+
+
+
+
+.RxPlus:hover {
+transform: scale(1.5);
+border-radius: 50%;
+background-color: rgb(224, 214, 214);
+
+}
+
+
+
+
+
+.tooltipAdd{
+margin-top: -2.5vh;
+margin-right:-8vw ;
+visibility: hidden;
+
+background-color: #9370db;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.2s;
+    
+}
+
+.RxPlus-subCont:hover .tooltipAdd {
+  visibility: visible;
+  opacity: 1;
+}
+
+.newEducFormModal{
+margin-top: 1vh;
+margin-bottom: 2vh;
+    width: 70%;
+    height: 77vh;
+border-bottom: 1px solid silver;
+display: flex;
+flex-direction: column;
+gap: 5vh;
+
+}
+
+
+.educFormDateCont{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+ }
+
+
+.educFormFileInout{
+    width: 100%;
+    height: 55%;
+}
+
+

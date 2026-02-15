@@ -1,0 +1,115 @@
+.profile-third-mainddiv{
+    width: 98%;
+    margin:5vh 0vw 5vh 0vw ;
+    display: flex;
+    flex-direction: column;
+height: 200vh;
+}
+
+
+.profilepost-cont{
+    display: flex;
+    width: 100%;
+    height: 38vh;
+   border: 1px solid silver;
+padding: 1rem;
+gap: 2vw;
+border-radius: 10px;
+margin-bottom: 4vh;
+}
+
+.post-user-info-MdAccountCircle {
+    width: 3vw !important;
+    height: 80% !important;
+border-radius: 50%;
+margin-left: 1vw;
+margin-top: .5vh;
+}
+
+
+.post-user-info-img{
+    width: 2.5vw !important;
+    height: 4vh !important;
+border-radius: 50%;
+margin-left: 1vw;
+margin-top: .5vh;
+}
+
+
+.post-pic{
+    width: 30%;
+    height: 100%;
+}
+
+
+.post-det-cont{
+    border: 1px solid silver;
+    width: 67%;
+
+border-radius: 10px;
+}
+
+
+
+
+
+
+
+.profilepage-post-user-info{
+    font-size: large;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+.profilepage-post-info{
+    display: flex;
+    padding: 1.4vh 1vw 0vw 1vw  ;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+
+}
+
+
+.show-all{
+    align-self: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+.show-all:hover{
+transform: scale(1.1,1.2); 
+}
+
+
+.profilepage-post-descrip{
+    height:50%;
+}
+
+.profilepage-likedislikecont{
+    display: flex;
+    width: 35%;
+    margin-left: 1vw;
+justify-content: space-between;
+}
+
+.recent-Uploads-SlLike{
+transition: 4ms;
+}
+
+.recent-Uploads-SlLike:hover{
+transform:scale(1.2);
+}
+
+.profilepage-post-timing{
+    font-size: small;
+
+}
+
+.crousel-img-recent{
+    height: 100%;
+}

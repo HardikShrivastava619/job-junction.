@@ -1,0 +1,630 @@
+
+
+.subdiv-pagezero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  margin: 20px 0;
+}
+
+.lines {
+  flex: 1;
+  height: 1px;
+  background-color: #000; 
+  border: none;
+}
+
+.span_page_zero {
+  padding: 0 10px;
+}
+.main-div-pagezero{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+
+}
+
+
+    .deg_input{
+        display: flex;
+        align-items: center;
+    }
+
+    .RxCross2-deg{
+        transition: 2ms;
+    }
+
+    .RxCross2-deg:hover{
+        transform: scale(1.5);
+    }
+    
+.degree_btn{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 1vw;
+}
+
+
+.degree-head{
+    text-decoration: underline;
+}
+
+.degree_input:active{
+    border: none !important;
+}
+
+
+.degree_input{
+    width: 8vw;
+border: none;
+border-bottom: 1px solid black;
+}
+
+.FaPlus_btn:hover{
+            transform: scale(1.1);
+
+}
+
+    .FaPlus_btn{
+        transition: 2ms;
+width: 2.5vw;
+height: 5vh;
+border: none;
+margin-left: 1vw;
+color: white !important;
+background-image: linear-gradient(135deg,#9370db  ,#71b7e6 ) !important ; /* Blue with transparency */
+border-radius: 50%;
+        display: flex;
+justify-content: center;
+align-items: center;
+
+    }
+
+
+.react-confirm-alert-overlay {
+    background-image: linear-gradient(135deg,#9370db  ,#71b7e6 ) !important ; /* Blue with transparency */
+}
+
+
+.confirm-alert-cont{
+    background-color: white;
+    height: 28vh;
+    width: 35vw;
+    text-align: center;
+}
+
+
+.final-btn-Register{
+    width: 80%;
+    background-image: linear-gradient(135deg ,#71b7e6 ,#9370db );
+    align-self:  center !important;
+    padding: .6vh;
+    border-radius: .2rem;
+    margin-top: 3vh;
+    color: white;
+    border: none;
+    transition:  0.3s ease; /* Smooth animation effect */
+}
+
+.final-btn-Register:hover{
+    transform: scale(1.1,1.1);
+}
+ 
+
+
+
+
+.register_main{
+    position: fixed;
+        height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-image: linear-gradient(135deg,#ad8fe9  ,#71b7e6 );    
+}
+
+    .register-form{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+width: 40%;
+height: 70%;
+background-color: white;
+border-radius: .2rem;
+}
+
+
+
+.register-inputs-cont2{
+width: 15vw;
+}
+
+.gender-inputs-sub-cont{
+   width: 60%;
+   align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.have-acc{
+    font-size: small;
+    margin-bottom: 5vh;
+    margin-top: .5vh;
+    margin-left: .5vw;
+}
+    
+
+.otp-inputs-sub-cont{
+    width: 100%;
+     display: flex;
+align-items: center;
+     flex-direction: column;
+ }
+ 
+
+
+.gend-inputs-label{
+position: relative;
+bottom: .2vh;
+font-size: 1em;
+}
+
+
+
+
+.email-input{
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.gender-input-container{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.gender-heading{
+    padding: 0vh 0vw 0vh 2vw;
+    font-size: 1.2em;
+}
+
+
+
+
+
+.btn-Register{
+    width: 80%;
+    background-image: linear-gradient(135deg ,#71b7e6 ,#9370db );
+    align-self:  center !important;
+    padding: .6vh;
+    border-radius: .2rem;
+    
+    color: white;
+    border: none;
+transition: 0.3s ease ;
+}
+
+.btn-Register:hover{
+    transform: scale(1.1,1.1);
+}
+
+.register_loader{
+    background-image: linear-gradient(135deg ,#71b7e6 ,white );
+    min-height: .8vh;
+    position: relative;
+    top: 7.2vh;
+    width: 80%;
+    animation: moveRight 1s linear infinite;
+  }
+  
+  @keyframes moveRight {
+    0% {
+        transform: translateX(-100%); /* Start outside on the left */
+    }
+    100% { 
+        transform: translateX(100%); /* End outside on the right */
+    }
+  }
+
+
+  .insta-input-containrs{
+    display: flex;
+    width: 100%;
+    gap: 2.5vw;
+align-items: center;  
+}
+  
+  
+.register_inputs-container-page4{
+    height: 60%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.socialmedia_inouts-cont{
+    width: 100%;
+    height: 80%;
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textarea-head{
+    color: gray;
+    font-size: medium;
+    position: relative;
+    bottom:  5vh;
+}
+
+.FaInstagram-placeholder{
+    font-size: x-large;
+position: relative;
+left: 5vw;
+}
+
+.insta-input{
+    width: 81%;
+text-align: center;
+
+}
+
+
+.insta-input::placeholder{
+   margin-right: 18vw !important;
+}
+
+.textarea-aboutme{
+    width: 80%;
+    height: 20%;
+}
+
+
+  .proff-register_inputs-container{
+
+    height: 46%;
+    width: 100%;
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+    padding: 0vh 1vw 0vh 1vw ;
+    
+}
+
+.otp-input{
+    width: 35%;
+text-align: center;
+margin-top: 5vh;
+
+}
+
+.Upload-photo-container{
+    height: 60%;
+display: flex;
+width: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.username-input-cont{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+padding-left:2vw ;
+}
+
+
+.username-input{
+    width: 55%;
+    text-align: center;
+}
+
+.uploaded-pic{
+    width: 26%;
+    position: relative;
+    bottom: 1vh;
+   height: 40%;
+   border-radius: 50%; 
+}
+.upload-pic-btn{
+font-size: 10em;
+}
+
+
+.random-usernaem{
+font-size: 2em;
+cursor: pointer;
+}
+
+.auto-generate-opt{
+font-size: small;
+}
+
+
+.proff-details-head{
+
+    font-weight: 400;
+
+}
+
+
+.profe-registe-input-subcont{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    
+    .role-inputs-sub-cont{
+        width: 65%;
+        display: flex;
+        justify-content: flex-end;
+    gap: 2vw;
+font-size: small;
+    }
+
+
+
+    .address-register_inputs-container{
+        height: 70%;
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+        padding: 0vh 1vw 0vh 1vw ;
+    }
+    
+
+        .username-input-cont{
+display: flex;
+justify-content: center;
+padding-right: 2vw;
+    }
+
+
+    /*
+
+
+    @media (min-width : 300px ) and (max-width:600px) {
+    
+        .confirm-alert-cont{
+            background-color: white;
+            height: 25vh;
+            width: 65vw;
+            text-align: center;
+            font-size: x-small;
+        }
+        
+        
+        .final-btn-Register{
+            width: 80%;
+            background-image: linear-gradient(135deg ,#71b7e6 ,#9370db );
+            align-self:  center !important;
+            padding: .6vh;
+            border-radius: .2rem;
+            margin-top: 3vh;
+            color: white;
+            border: none;
+            transition:  0.3s ease; /* Smooth animation effect    }
+        
+        .final-btn-Register:hover{
+            transform: scale(1.1,1.1);
+        }
+        
+
+
+        .register-form{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid white;
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    border-radius: .2rem;
+    }
+
+    
+.sign-Up_head{
+    width:100% ;
+    height: 10%;
+padding: 2vh 0vw 0vw 1vw ;
+text-decoration: underline;
+font-size: 1em;
+}
+
+
+
+.register-inputs{
+    width: 90% !important;
+font-size: small;
+
+}
+
+
+
+
+.gender-input-container{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.gender-heading{
+    padding: 0vh 0vw 0vh 2vw;
+    font-size: 1em;
+
+}
+
+
+.gender-inputs-sub-cont{
+    width: 60%;
+    align-self: center;
+     display: flex;
+     justify-content: space-between;
+ font-size: x-small;
+}
+ 
+.otp-inputs-sub-cont{
+    width: 100%;
+     display: flex;
+     justify-content: center;
+     font-size: small;
+ }
+ 
+
+ .otp-input{
+    width: 45%;
+  text-align: center;
+font-size: small;
+}
+
+.uploaded-pic{
+    width: 40%;
+   height: 40%;
+   border-radius: 50%; 
+
+}
+
+.upload-pic-btn{
+    font-size: 10em;
+
+}
+        .username-input-cont{
+display: flex;
+justify-content: center;
+    }
+
+    }
+
+
+
+    
+
+
+ 
+    @media (min-width : 600px ) and (max-width:900px) {
+    
+        .confirm-alert-cont{
+            background-color: white;
+            height: 25vh;
+            width: 65vw;
+            text-align: center;
+            font-size: x-small;
+        }
+        
+        
+        .final-btn-Register{
+            width: 80%;
+            background-image: linear-gradient(135deg ,#71b7e6 ,#9370db );
+            align-self:  center !important;
+            padding: .6vh;
+            border-radius: .2rem;
+            margin-top: 3vh;
+            color: white;
+            border: none;
+            transition:  0.3s ease; 
+        }
+        
+        .final-btn-Register:hover{
+            transform: scale(1.1,1.1);
+        }
+        
+
+
+        .register-form{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid white;
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    border-radius: .2rem;
+    }
+
+    
+.sign-Up_head{
+    width:100% ;
+    height: 10%;
+padding: 2vh 0vw 0vw 1vw ;
+text-decoration: underline;
+font-size: 1em;
+}
+
+
+
+.register-inputs{
+    width: 90%;
+font-size: small;
+}
+
+
+
+
+.gender-input-container{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.gender-heading{
+    padding: 0vh 0vw 0vh 2vw;
+    font-size: 1em;
+
+}
+
+
+.gender-inputs-sub-cont{
+    width: 60%;
+    align-self: center;
+     display: flex;
+     justify-content: space-between;
+ font-size: x-small;
+}
+ 
+.otp-inputs-sub-cont{
+    width: 100%;
+     display: flex;
+     justify-content: center;
+     font-size: small;
+ }
+ 
+
+ .otp-input{
+    width: 45%;
+  text-align: center;
+font-size: small;
+}
+
+.uploaded-pic{
+    width: 40%;
+   height: 40%;
+   border-radius: 50%; 
+
+}
+
+.upload-pic-btn{
+    font-size: 10em;
+
+}
+
+
+    .username-input-cont{
+display: flex;
+justify-content: center;
+    }
+
+    }
+
+*/

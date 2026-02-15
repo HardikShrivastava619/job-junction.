@@ -1,0 +1,117 @@
+
+.chatsidebar{
+    height: 90vh;
+    margin-top: 10vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: rgb(210, 210, 250);
+    z-index: 0 !important;
+}
+
+.chat-0sidebar-subdiv{
+    border: 1px solid rgba(192, 192, 192, 0.596);
+    min-height: 15%;
+display: flex;
+align-items: center;
+padding-left: 1vw;
+}
+
+.chat-0sidebar-subdiv:hover{
+background-color: rgba(0, 0, 0, 0.13);
+
+}
+
+
+
+.namedivchatsidebar{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+margin-top: 1.3vh;
+}
+
+
+.chatsidebar-img{
+    border-radius: 50%;
+    height: 7vh;
+    width: 3.5vw;
+margin-right: .5vw;
+border: 3px solid white;
+}
+.unRreadmsgSidebar{
+    position: relative;
+    bottom: 1vh;
+font-weight:700 !important;
+
+}
+
+
+.lastmsgSidebar{
+    position: relative;
+    bottom: 1vh;
+
+}
+
+.timeChatSidebar{
+margin-left: 2vw;
+margin-top: 1.4vh;
+display: flex;
+width: 17%;
+flex-direction: column;
+justify-content: center;
+height: 100%;
+align-items: center;
+}
+
+.active-chat-div{
+    background-color: rgb(110, 67, 251);
+    color: white !important;
+}
+
+.active-chat-div:hover{
+    background-color: rgb(110, 67, 251) !important;
+ }
+
+
+ .chatSidebarHead{
+    min-height: 10%;
+    background-color: rgb(110, 67, 251) !important;
+
+    width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: white;
+ }
+
+
+ .FaUserFriendschatSideBar-cont{
+width: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+ .FaUserFriendschatSideBar{
+    cursor: pointer;
+
+    padding: 1.5vh 0vw 1.5vh 0vw ;
+
+font-size: 3.5rem !important;
+}
+
+ .FaUserFriendschatSideBar:hover{
+    cursor: pointer;
+   background-color: rgba(255, 255, 255, 0.312); 
+ }
+
+ .role-notf{
+   background-color:  orange;
+font-size: small;
+height: 10%;
+padding: 0.2vh 0.6vw;
+ border-radius: 50%;
+ margin-left: -1vw;
+align-self: start;
+}

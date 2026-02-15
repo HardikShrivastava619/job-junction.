@@ -1,0 +1,101 @@
+export const rejection_template = ` 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Application Rejected</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #9370db;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 20px;
+      color: #333333;
+    }
+    .content p {
+      font-size: 16px;
+      color: #555555;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .highlight-box {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #71b7e6;
+      border-radius: 5px;
+    }
+    .footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      color: #777777;
+    }
+    .footer a {
+      color: #9370db;
+      text-decoration: none;
+    }
+    @media only screen and (max-width: 600px) {
+      .content h1 {
+        font-size: 18px;
+      }
+      .highlight-box {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      JobJunction – Application Update
+    </div>
+
+    <div class="content">
+      <h1>Hello,</h1>
+      <p>
+        Thank you for your interest in the opportunity at JobJunction.
+        After careful review, we regret to inform you that your application has not been successful at this time.
+      </p>
+      <p>
+        We appreciate the time and effort you invested in the process, and we genuinely hope to have the chance to work with you in the future.
+      </p>
+      <div class="highlight-box">
+        Wishing You the Best of Luck Ahead!
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>If you believe this email was sent in error, please <a href="#">let us know here</a>.</p>
+      <p>© 2024 JobJunction, LLC. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
+`;

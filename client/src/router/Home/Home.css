@@ -1,0 +1,296 @@
+
+
+.home-main{
+    width: 75vw;
+    max-height: 90vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: auto;
+scrollbar-width: none;
+}
+
+.home-cont{
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    width: 45vw;
+    max-height: 77vh;
+    padding-bottom: 1vh;
+}
+
+.carousel-home{
+width: 45vw;
+overflow: hidden;
+height: 70%;
+
+}
+
+.home-div-first{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.home-PiDotsThreeVerticalBold{
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 2vw;
+    text-align: center;
+}
+
+.home-PiDotsThreeVerticalBold:hover{
+background-color: rgba(192, 192, 192, 0.293);
+border-radius: 5px;
+}
+
+.home-likedislikecont{
+  width: 35%;
+  font-size: 1em;
+  padding: .5vh 1vw ;  
+display: flex;
+justify-content: space-between;
+}
+
+
+.dropdown-item-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-item-comm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.dropdown-item-comm:hover{
+    background-color: rgba(128, 128, 128, 0.227);
+}
+
+.home-post-descrip{
+    width: 100%;
+padding-left: 1vw;
+margin-top: -3vh;
+}
+
+.post-user-info{
+    max-height: 8%;
+    font-size: large;
+margin-top: 1vh;
+text-decoration: none;
+color: black;
+}
+
+.post-user-info-MdAccountCircle{
+    font-size: 2rem; 
+}
+
+.post-user-home-img {
+  width: 2vw;
+  height: 2vw; 
+  margin: 0vh .5vw 0vh .5vw; 
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+
+.home-post-timin{
+    padding-right: 1vw;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.post-info{
+    display: flex;
+    flex-direction: column;
+    height: 23%;
+    justify-content: space-between;
+margin-top: 1vh;
+}
+
+
+
+.commnetUl{
+width: 40vw; 
+height: 60vh;
+cursor: pointer;
+}
+
+.comment-search-div{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+
+.comm-self-img{
+width: 11%;
+height: 85%;
+border-radius: 50%;
+}
+
+.coment-input {
+  width: 70%;
+  height: 70%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none; /* Optional: removes default blue glow */
+
+}
+
+
+.coment-input:focus {
+  border: 1px solid #9370db; 
+box-shadow: 1px 1px 40px #9370db;
+}
+.coments-text {
+  width: 73%;
+min-height: 10%;
+max-height: 50%;
+  word-break: break-word;
+  white-space: normal;
+  display: block;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+
+
+
+.comm-thrredot:hover{
+background-color: rgba(128, 128, 128, 0.155);
+}
+
+
+
+.comment-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 3vh;
+border-bottom: 1px solid rgba(128, 128, 128, 0.353);
+text-decoration: none !important;
+}
+
+
+
+
+.comm-div{
+    height: 48vh;
+gap: 2vh !important;
+overflow-y: auto;
+scrollbar-width: thin;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.other-comm-box{
+    height: 18vh !important;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 98%;
+}
+
+
+.comm-fisrtBox{
+    
+background-color: rgba(99, 76, 248, 0.178);
+height: 6vh ;
+padding-left: .5vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid rgba(128, 128, 128, 0.263);
+}
+
+.comment-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    height: 60%;
+
+    font-size: x-small;
+}
+
+.comm-img{
+    width: 7%;
+    height: 5vh;
+    border-radius: 50%;
+}
+
+.comm-secBox{
+height: 10vh;
+display: flex;
+border: 1px solid rgba(128, 128, 128, 0.263);
+border-top:none ;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+
+.comm-name{
+    color: black;
+    text-decoration: none !important;
+
+}
+
+
+.comm-text{
+    font-size:small;
+    padding: .3vh .4vw .3vh .4vw;
+height: 8vh;
+overflow-y: auto;
+scrollbar-width: thin;
+}
+
+
+.comm-thrredot{
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 4.5vh;
+border-radius: 50%;
+color: black;
+}
+
+
+.commtimeCont{
+    height: 2vh;
+    width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: gray;
+padding-right: .5vw;
+}
+
+.liker-name{
+    width:10%;
+    margin-top: -5.5vh;
+    font-size: x-small;
+margin-left: 1vw;
+cursor: pointer;
+color: gray;
+transition: 2ms;
+}
+
+
+
+.liker-name:hover{
+transform: scale(1, 1.2 );
+color: #9370db;
+}

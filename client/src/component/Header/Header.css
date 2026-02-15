@@ -1,0 +1,452 @@
+
+.header{
+background-image: linear-gradient(50deg,#71b7e6  , #9370db ) ;
+    color: white !important;
+    display: flex !important; 
+    align-items: center !important;
+height: 10vh !important;
+width: 100% !important;
+justify-self: center;
+}
+
+.header-div{
+    width: 100vw;
+    height: 130%;
+}
+
+.header-sec-div{
+height: 100%;
+width: 100%;
+
+}
+
+.header-ul{
+    width: 23%;
+display: flex;
+height: 100%;
+gap: .5vw;
+}
+
+.header-li{
+height: 100%;
+min-width: 20% ;
+display: flex;
+align-items: center; 
+justify-content: center;
+}
+
+.CgMenuLeft{
+    font-size: xx-large !important;
+}
+
+.headers-links{
+font-size: small !important;
+height: 90%;
+width: 95%;
+text-align: center;
+padding-top:2vh !important ;
+}
+
+.headers-links:hover{
+    background-color: rgba(255, 255, 255, 0.099) !important;
+}
+
+
+.FaUserTie{
+    font-size: 1.5rem !important;
+}
+
+
+
+.search-second{
+    display: none !important;
+}
+
+
+.navbar-brand{
+    background-color: transparent;
+    border: none;
+transition: 0.3 ease;
+}
+
+.navbar-brand:hover{
+border: 1px solid rgba(255, 255, 255, 0.144);
+transform: scale(1.1,1.1);
+background-color: rgba(255, 255, 255, 0.156);
+border-radius: 10%;    
+}
+
+
+
+.header-ul-small{
+    display: none !important;
+}
+
+.notf-text{
+    font-size: .9rem;
+}
+
+.notific-ul{
+    width: 25vw;
+height: 72vh;
+overflow-y: auto !important;
+scrollbar-width: none;
+}
+
+.notifc-dropdown-item{
+    padding: none !important;
+    border-bottom: 1px solid silver !important;
+    height: 14vh;
+ display: flex !important;
+justify-content: space-between;
+}
+
+.notifc-dropdown-item-unseen{
+    padding: none !important;
+    border-bottom: 1px solid silver !important;
+    height: 14vh;
+ display: flex !important;
+justify-content: space-between;
+    background-color: #560dea4f !important;
+color: white !important;
+}
+
+
+.notifc-dropdown-item:hover{
+    background-color: #9470db4f !important;
+}
+
+
+
+.notific-large-div{
+width: 90%;
+display: flex;
+flex-direction: column;
+}
+
+.notific-large-div-para{
+font-size: small;
+text-wrap: wrap;
+height: 6vh;
+}
+
+.notific-small{
+    color: gray;
+}
+
+
+
+
+.MdAccountCircle-notiifc{
+    font-size: 2rem;
+position: relative;
+right: .6vw;
+}
+
+
+.img-notiifc{
+    width: 2.3vw;
+    height: 4vh;
+    border-radius: 50%;
+position: relative;
+right: .6vw;
+}
+
+
+.RxCross1-notifc{
+    font-size: 1.2rem;
+color: grey;
+position: relative;
+left: .6vw;
+transition: 1s;
+}
+
+.RxCross1-notifc:hover{
+    transform: scale(1.2);
+color: black;
+}
+
+
+
+
+.notifNotif{
+    background-color: orange;
+padding: .3vh .5vw;
+border-radius: 50%;
+margin-left: -2vw;
+position: relative;
+bottom: 2vh;
+left: 1vw;
+text-align: center;
+}
+
+.msgNotif{
+    background-color: orange;
+padding: .3vh .5vw;
+border-radius: 50%;
+margin-left: -2vw;
+position: relative;
+bottom: 2.4vh;
+left: 1vw;
+text-align: center;
+}
+
+.markallRead{
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+    border-bottom: 1px solid silver;
+}
+
+.markallReadsmall{
+    color: grey;
+    cursor: pointer;
+    
+}
+.markallReadsmall:hover{
+color: blue;
+}
+
+/************************************************/
+
+@media (min-width:300px) and (max-width:600px) {
+    
+    .header{
+        background-color:#9370db !important;
+        color: white !important;
+        display: flex !important; 
+        align-items: center !important;
+    height: 10vh ;
+    width: 100vw ;
+    }
+    
+    .header-div{
+        width: 100vw !important;
+        height: 100% !important;
+display: flex;
+align-items: center !important;
+justify-content: space-between !important;
+    }
+
+    .navbar-toggler{
+display: none;
+    }
+
+
+.form-sm{
+    width: 40% !important;
+margin-bottom: 1.5vh;
+}
+.search-second{
+    display: flex !important;
+    width: 100% !important;
+    }    
+    
+    
+    
+    .header-ul{
+display: none !important;
+    }
+
+    .header-ul-small{
+        display: flex !important;
+        flex-direction: row !important;
+    width: 60%;
+   
+    justify-content: space-evenly !important;
+    }
+    
+   
+.header-li-sm{
+    height: 100%;
+    min-width: 20% ;
+    display: flex !important;
+    align-items: center!important;
+    justify-content: center !important;
+} 
+ 
+
+
+.search-bar-form{
+    display: none !important;
+}
+
+
+.head-p-sm{
+    font-size: x-small;
+}
+
+
+
+.headers-links-sm{
+font-size: small !important;
+width: 100% !important;
+text-align: center;
+padding-top: 2vh !important;
+
+}
+    
+    .headers-links-sm:focus{
+      transform: scale(1,1.1)  !important;
+    }
+    
+    .navbar-brand{
+    display: none !important;
+}
+
+.FaUserTie-sm{
+   font-size: medium ; 
+}
+
+.MdAccountCircle-sm{
+    font-size: x-large;
+}
+
+}
+
+
+
+
+@media (min-width:600px) and (max-width:900px){
+  
+    .header{
+        background-color:#9370db !important;
+        color: white !important;
+        display: flex !important; 
+        align-items: center !important;
+    height: 10vh ;
+    width: 100vw ;
+    }
+    
+    .header-div{
+        width: 100vw !important;
+        height: 100% !important;
+display: flex;
+align-items: center !important;
+justify-content: space-between !important;
+
+    }
+
+    .navbar-toggler{
+display: none;
+
+    }
+
+
+.form-sm{
+    width: 100% !important;
+
+}
+.search-second{
+    display: flex !important;
+    width: 100% !important;
+    
+}    
+    
+    
+    
+    .header-ul{
+display: none !important;
+
+}
+
+    .header-ul-small{
+position: relative;
+left: 30vw;
+        display: flex !important;
+        flex-direction: row !important;
+    min-width: 40vw !important;
+    justify-content: space-evenly !important;
+    }
+    
+   
+.header-li-sm{
+    
+    height: 100%;
+    min-width: 20% ;
+} 
+ 
+
+
+.search-bar-form{
+    display: none !important;
+}
+
+
+.head-p-sm{
+    font-size: x-small;
+
+}
+
+
+
+.headers-links-sm{
+font-size: small !important;
+width: 100% !important;
+text-align: center;
+height: 100% !important;
+padding-top: 4vh !important;
+
+}
+    
+    .headers-links-sm:focus{
+      transform: scale(1,1.1)  !important;
+    }
+    
+    .navbar-brand{
+    display: none !important;
+}
+
+.FaUserTie-sm{
+   font-size: large !important; 
+}
+
+.MdAccountCircle-sm{
+    font-size: xx-large;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:900px) and (max-width:1200px){
+    .header-main{
+width: 100vw;
+    }    
+
+
+
+.navbar-brand{
+    display: none;
+}
+
+.form-sm{
+    display: none;
+}
+
+.header-ul{
+    width: 40%;
+    display: flex;
+
+}
+
+
+
+
+}
+
+
+
+
+
+

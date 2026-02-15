@@ -1,0 +1,189 @@
+.loginUser-main{
+    width: 30vw !important;
+    height: 90vh !important;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.user-pic-main-container{
+    border: 1px solid silver;
+    width: 100%;
+    height: 35vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+background-image: linear-gradient(150deg,rgb(215, 185, 15)  ,#71b7e6 ) !important 
+}
+
+.user-pic-container{
+    border-bottom: 1px solid silver;
+    height: 80%;
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.MdAccountCircle-login_user{
+    font-size: 12rem;
+}
+
+.loginUser-ul{
+    width: 100%;
+    height: 55vh;
+display: flex;
+flex-direction: column;
+align-items: center; 
+
+}
+.login_user-link{
+border: 1px solid white;
+color: white;
+font-size: large;  
+text-align: center;
+display: flex;
+justify-content: center;
+    width: 100%;
+    height: 17%;
+    text-decoration: none;
+    background-image: linear-gradient(50deg,#9370db  ,#71b7e6 ) !important ; /* Blue with transparency */
+transition: 0.3s ease;
+}
+
+
+
+
+.login_user-link:hover{
+transform: scale(1,1.2);
+}
+    
+.login-user-link-sm-box{
+width: 50%;
+display: flex;
+align-items: center;
+gap: 1vw;
+padding-left: 1vw;
+}
+.loginuser-link-icons{
+    font-size: x-large !important;
+}
+
+.loginuser-link-numbers{
+    font-size: large;
+    margin-top: auto;
+
+}
+
+
+@media (min-width:300px) and (max-width:600px){
+    .loginUser-main{
+        display: none;
+    }
+}
+
+
+@media (min-width:600px) and (max-width:900px){
+    .loginUser-main{
+        display: none;
+    }    }
+
+
+    
+
+    @media (min-width:900px) and (max-width:1200px){
+     
+        .loginUser-main{
+            width: 30vw !important;
+            height: 90vh !important;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .user-pic-main-container{
+            border: 1px solid silver;
+            width: 100%;
+            height: 35vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-image: linear-gradient(150deg,rgb(215, 185, 15)  ,#71b7e6 ) !important 
+        }
+        
+        .user-pic-container{
+            border-bottom: 1px solid silver;
+            height: 70%;
+            width: 100%;
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        }
+        
+        .MdAccountCircle-login_user{
+            font-size: 10rem;
+
+        }
+        
+        .loginUser-ul{
+            width: 100%;
+            height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        
+        }
+        .login_user-link{
+
+            border: 1px solid white;
+        color: white;
+        font-size: medium;  
+        display: flex;
+            width: 100%;
+            height: 15%;
+            text-decoration: none;
+            background-image: linear-gradient(50deg,#9370db  ,#71b7e6 ) !important ; /* Blue with transparency */
+        transition: 0.3s ease;
+        }
+        
+        
+        .login-user-name{
+            font-size: large;
+        }
+        
+        .login_user-link:hover{
+        transform: scale(1,1.1);
+        }
+            
+        .login-user-link-sm-box{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        padding-left: 1.2vw;
+        }
+        .loginuser-link-icons{
+            font-size: x-large !important;
+        }
+        
+        .loginuser-link-numbers{
+            font-size: large;
+            margin-top: auto;
+        
+        }
+    
+    
+    }
+    
+
+    .userprofilepic-login_user{
+        width: 12vw;
+        height: 22vh;
+    border: none;
+    border-radius: 50%;
+    }
