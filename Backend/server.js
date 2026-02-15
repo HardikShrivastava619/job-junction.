@@ -26,7 +26,7 @@ dotenv.config();
 const app = express(); 
 const server = http.createServer(app);
 app.use(express.json());
-app.use(morgan('dev'));
+app.use(morgan('dev')); 
 
 
 const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
