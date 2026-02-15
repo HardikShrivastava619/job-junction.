@@ -23,7 +23,7 @@ import  './model/cleanupRejectedApplications.js';
 
 dotenv.config();
 
-const app = express();
+const app = express(); 
 const server = http.createServer(app);
 app.use(express.json());
 app.use(morgan('dev'));
