@@ -17,14 +17,14 @@ const initDB = async () => {
 
 
 
-/*      await connection.query(
+    await connection.query(
       `CREATE DATABASE IF NOT EXISTS \`${process.env.DB_NAME}\`;`,
     );
     console.log(`✅ Database '${process.env.DB_NAME}' is ready.`);
 
     await connection.changeUser({ database: process.env.DB_NAME });
 
- */
+ 
 
 
 
