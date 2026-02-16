@@ -134,11 +134,12 @@ return navigate('/')
 }
 
 
-
+const apiUrl = import.meta.env.VITE_API_URL;
+console.log("apiUrl",apiUrl);
 
 const sendOtp = async () => {
   try {
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/register`,{
+    const res = await fetch(`${apiUrl}/api/user/register`,{
           method:'POST',
 headers:{
     "Content-Type": "application/json",
