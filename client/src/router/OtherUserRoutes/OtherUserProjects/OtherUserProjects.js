@@ -13,7 +13,7 @@ export const OtherUserProjectsLogic = () => {
     const handleGetProject = async () => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/project/getProjects/${params?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/project/getProjects/${params?.id}`,
         );
 
         const data = await res.json();
@@ -30,7 +30,7 @@ export const OtherUserProjectsLogic = () => {
     const handleDeleteProject = async (pid) => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/project/deleteProject/${pid}`,
+          `https://job-junction-dpvo.onrender.com/api/project/deleteProject/${pid}`,
           {
             method: "DELETE",
           },
@@ -50,7 +50,7 @@ export const OtherUserProjectsLogic = () => {
     const hanldeprojectLike = async ({ pid, id }) => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/project/likeProject/${pid}/${id}`,
+          `https://job-junction-dpvo.onrender.com/api/project/likeProject/${pid}/${id}`,
           {
             method: "PUT",
             headers: {
@@ -72,7 +72,7 @@ export const OtherUserProjectsLogic = () => {
     const hanldeprojectDisLike = async ({ pid, id }) => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/project/disLikeProject/${pid}/${id}`,
+          `https://job-junction-dpvo.onrender.com/api/project/disLikeProject/${pid}/${id}`,
           {
             method: "PUT",
             headers: {

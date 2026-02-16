@@ -11,7 +11,7 @@ export const MyPostLogic = () => {
     const handleGetPosts = async () => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/post/getPost/${loginData?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/post/getPost/${loginData?.id}`,
         );
 
         const data = await res.json();
@@ -26,7 +26,7 @@ export const MyPostLogic = () => {
     const handleDeletePost = async (pid) => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/post/deletePost/${pid}`,
+          `https://job-junction-dpvo.onrender.com/api/post/deletePost/${pid}`,
           {
             method: "DELETE",
           },
@@ -67,7 +67,7 @@ export const MyPostLogic = () => {
     const hanldepostLike = async ({ pid, id }) => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/post/likePost/${pid}/${id}`,
+          `https://job-junction-dpvo.onrender.com/api/post/likePost/${pid}/${id}`,
           {
             method: "PUT",
             headers: {
@@ -90,7 +90,7 @@ export const MyPostLogic = () => {
     const hanldepostDisLike = async ({ pid, id }) => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/post/disLikePost/${pid}/${id}`,
+          `https://job-junction-dpvo.onrender.com/api/post/disLikePost/${pid}/${id}`,
           {
             method: "PUT",
             headers: {

@@ -20,7 +20,7 @@ export const chatLogic = () => {
     const handleGetUnseenMsg = async () => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/message/getUnseenMsg/${loginData?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/message/getUnseenMsg/${loginData?.id}`,
         );
         const data = await res.json();
 
@@ -44,7 +44,7 @@ export const chatLogic = () => {
     const getALLMessengers = async () => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/message/chatusers/${loginData?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/message/chatusers/${loginData?.id}`,
         );
         const data = await res.json();
 
@@ -68,7 +68,7 @@ export const chatLogic = () => {
         msgData.append("text", message);
 
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/message/sendMsg/${loginData?.id}/${currChatingUser?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/message/sendMsg/${loginData?.id}/${currChatingUser?.id}`,
           {
             method: "POST",
             body: msgData,
@@ -101,7 +101,7 @@ export const chatLogic = () => {
       try {
         if (currChatingUser != null) {
           const res = await fetch(
-            `${import.meta.env.VITE_API_URL}/api/message/updateSeenMsg/${loginData?.id}/${currChatingUser?.id}`,
+            `https://job-junction-dpvo.onrender.com/api/message/updateSeenMsg/${loginData?.id}/${currChatingUser?.id}`,
             {
               method: "PUT",
               headers: {
@@ -148,7 +148,7 @@ export const chatLogic = () => {
           await Promise.all(
             deleteMSgId?.map(async (m) => {
               const res = await fetch(
-                `${import.meta.env.VITE_API_URL}/api/message/deleteMsg/${m}`,
+                `https://job-junction-dpvo.onrender.com/api/message/deleteMsg/${m}`,
                 {
                   method: "DELETE",
                 },

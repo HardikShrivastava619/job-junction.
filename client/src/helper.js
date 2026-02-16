@@ -4,11 +4,11 @@ export function convertUTCToIST(utcDateStr) {
   const utcDate = new Date(utcDateStr);
 
   const istDate = new Date(
-    utcDate.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+    utcDate.toLocaleString("en-US", { timeZone: "Asia/Kolkata" }),
   );
 
   const nowIST = new Date(
-    new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+    new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }),
   );
 
   const isSameDate =
@@ -36,14 +36,6 @@ export function convertUTCToIST(utcDateStr) {
   }
 }
 
-
-
-
-
-
-
-
-
 export function getPreciseDateOldness(utcDateString) {
   const inputDate = new Date(utcDateString);
   const today = new Date();
@@ -67,74 +59,64 @@ export function getPreciseDateOldness(utcDateString) {
 
   // Build the result string
   let result = [];
-  if (years > 0) result.push(`${years} year${years > 1 ? 's' : ''}`);
-  if (months > 0) result.push(`${months} month${months > 1 ? 's' : ''}`);
-  if (days > 0 || result.length === 0) result.push(`${days} day${days !== 1 ? 's' : ''}`);
+  if (years > 0) result.push(`${years} year${years > 1 ? "s" : ""}`);
+  if (months > 0) result.push(`${months} month${months > 1 ? "s" : ""}`);
+  if (days > 0 || result.length === 0)
+    result.push(`${days} day${days !== 1 ? "s" : ""}`);
 
-  return result.join(', ') + ' ago';
+  return result.join(", ") + " ago";
 }
 
-
-
-
-
-
-
-
-export   const convertName = (name) => {
+export const convertName = (name) => {
   try {
     return name
       ?.split(" ")
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
       .join(" ");
   } catch (error) {
     console.log(error);
-    return name; }
-}
+    return name;
+  }
+};
 
-
-
-export const handleCreateNotification = async ({sid,rid,eid,type,action }) => {
+export const handleCreateNotification = async ({
+  sid,
+  rid,
+  eid,
+  type,
+  action,
+}) => {
   try {
-        
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/notf/addNotif`, {
-         method:'POST',
-         headers:{
-            'Content-Type' : 'application/json'
+    const res = await fetch(
+      `https://job-junction-dpvo.onrender.com/api/notf/addNotif`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-         body:JSON.stringify({sid,rid,eid,type,action})
-        } )
+        body: JSON.stringify({ sid, rid, eid, type, action }),
+      },
+    );
 
-const data = await res.json();
+    const data = await res.json();
 
+    socket.emit("sendNotf", data?.newNotifc);
 
-
-socket.emit('sendNotf', 
-  data?.newNotifc
- )
-
-return data;
-
+    return data;
   } catch (error) {
     console.log(error);
-    
   }
-}
-
+};
 
 export const handleGetNotification = async (uid) => {
   try {
-        
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/notf/getNotif/${uid}`)
+    const res = await fetch(
+      `https://job-junction-dpvo.onrender.com/api/notf/getNotif/${uid}`,
+    );
 
-const data = await res.json();
-return data;
-
+    const data = await res.json();
+    return data;
   } catch (error) {
     console.log(error);
-    
   }
-}
-
-
-
+};

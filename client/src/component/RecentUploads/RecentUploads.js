@@ -1,41 +1,26 @@
-import React from 'react'
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export const recentUploadLogic = () => {
-  
+  const [posts, setPosts] = useState([]);
 
+  const loginData = useSelector((s) => s.loginData);
 
-
-const [posts,setPosts] = useState([])
-
-
-const loginData = useSelector(s=>s.loginData)
-
-const handleGetPosts = async () => {
+  const handleGetPosts = async () => {
     try {
+      const res = await fetch(
+        `https://job-junction-dpvo.onrender.com/api/post/getPost/${loginData?.id}`,
+      );
 
-        
-        
-const res = await fetch(`${import.meta.env.VITE_API_URL}/api/post/getPost/${loginData?.id}`)
-
-const data =await res.json()
-if (data?.success) {
-    setPosts(data?.posts)
-}
-        
-
+      const data = await res.json();
+      if (data?.success) {
+        setPosts(data?.posts);
+      }
     } catch (error) {
-        console.log(error);
-        
+      console.log(error);
     }
-}
-  
-  
+  };
 
-
-
-    return {handleGetPosts,loginData,posts}
-
-
-}
+  return { handleGetPosts, loginData, posts };
+};

@@ -13,7 +13,7 @@ const EnterpriseJobs = () => {
   const handleGetOurJob = async () => {
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/job/getOurJobs/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/job/getOurJobs/${loginData?.id}`,
       );
 
       const data = await res.json();
