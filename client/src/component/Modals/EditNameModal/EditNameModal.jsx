@@ -34,7 +34,7 @@ const EditNameModal = ({
       formData.append("Title", title);
 
       const res = await fetch(
-        `http://localhost:1800/api/user/complete_profile/${loginData?.email}`,
+        `https://job-junction-dpvo.onrender.com/api/user/complete_profile/${loginData?.email}`,
         {
           method: "PUT",
           body: formData,
@@ -60,7 +60,7 @@ const EditNameModal = ({
   const handleMoreDetailsforINpt = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/user/get_ourProfile/${paramsId}`,
+        `https://job-junction-dpvo.onrender.com/api/user/get_ourProfile/${paramsId}`,
       );
       const data = await res.json();
 

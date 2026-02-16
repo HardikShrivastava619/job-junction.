@@ -80,7 +80,7 @@ export const MoreDetailsLogic = () => {
   const handleMoreDetails = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/user/get_ourProfile/${params?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/user/get_ourProfile/${params?.id}`,
       );
       const data = await res.json();
 
@@ -130,7 +130,7 @@ export const MoreDetailsLogic = () => {
   const deleteLang = async (lid) => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/lang/deleteLang/${lid}`,
+        `https://job-junction-dpvo.onrender.com/api/lang/deleteLang/${lid}`,
         {
           method: "DELETE",
         },
@@ -148,7 +148,7 @@ export const MoreDetailsLogic = () => {
   const deleteSkills = async (sid) => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/skills/deleteSkills/${sid}`,
+        `https://job-junction-dpvo.onrender.com/api/skills/deleteSkills/${sid}`,
         {
           method: "DELETE",
         },
@@ -166,7 +166,7 @@ export const MoreDetailsLogic = () => {
   const getLang = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/lang/getLang/${params?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/lang/getLang/${params?.id}`,
       );
       const data = await res.json();
 
@@ -179,7 +179,7 @@ export const MoreDetailsLogic = () => {
   const getSkills = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/skills/getSkills/${params?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/skills/getSkills/${params?.id}`,
       );
       const data = await res.json();
 
@@ -213,7 +213,7 @@ export const MoreDetailsLogic = () => {
       educFormData.append("certificate", certificate);
 
       const res = await fetch(
-        `http://localhost:1800/api/education/addEducDet/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/education/addEducDet/${loginData?.id}`,
         {
           method: "POST",
           body: educFormData,
@@ -233,7 +233,7 @@ export const MoreDetailsLogic = () => {
   const handleDeleteeducdet = async (id) => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/education/deleteEducDet/${id}`,
+        `https://job-junction-dpvo.onrender.com/api/education/deleteEducDet/${id}`,
         {
           method: "DELETE",
         },
@@ -252,7 +252,7 @@ export const MoreDetailsLogic = () => {
   const getEducDet = async (e) => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/education/getEducDet/${params?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/education/getEducDet/${params?.id}`,
       );
       const data = await res.json();
 
@@ -269,7 +269,7 @@ export const MoreDetailsLogic = () => {
       e.preventDefault();
 
       const res = await fetch(
-        `http://localhost:1800/api/lang/saveLang/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/lang/saveLang/${loginData?.id}`,
         {
           method: "POST",
           headers: {
@@ -293,7 +293,7 @@ export const MoreDetailsLogic = () => {
       e.preventDefault();
 
       const res = await fetch(
-        `http://localhost:1800/api/skills/saveSkills/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/skills/saveSkills/${loginData?.id}`,
         {
           method: "POST",
           headers: {
@@ -322,7 +322,7 @@ export const MoreDetailsLogic = () => {
   const checkFollows = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/follow/checkFollowsOrnot/${followers_id}/${followed_id}`,
+        `https://job-junction-dpvo.onrender.com/api/follow/checkFollowsOrnot/${followers_id}/${followed_id}`,
       );
       const data = await res.json();
 
@@ -341,7 +341,7 @@ export const MoreDetailsLogic = () => {
   const getFollowers = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/follow/getAllFollowers/${followed_id}`,
+        `https://job-junction-dpvo.onrender.com/api/follow/getAllFollowers/${followed_id}`,
       );
       const data = await res.json();
 
@@ -358,7 +358,7 @@ export const MoreDetailsLogic = () => {
   const getFollowings = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/follow/getAllFollowings/${followed_id}`,
+        `https://job-junction-dpvo.onrender.com/api/follow/getAllFollowings/${followed_id}`,
       );
       const data = await res.json();
 
@@ -372,13 +372,16 @@ export const MoreDetailsLogic = () => {
 
   const handleFollowBtn = async () => {
     try {
-      const res = await fetch(`http://localhost:1800/api/follow/follow`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const res = await fetch(
+        `https://job-junction-dpvo.onrender.com/api/follow/follow`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ followers_id, followed_id }),
         },
-        body: JSON.stringify({ followers_id, followed_id }),
-      });
+      );
       const data = await res.json();
 
       if (data?.success) {
@@ -403,7 +406,7 @@ export const MoreDetailsLogic = () => {
   const updateViewers = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/user/updateViewers/${params?.id}/${loginData?.id} `,
+        `https://job-junction-dpvo.onrender.com/api/user/updateViewers/${params?.id}/${loginData?.id} `,
         {
           method: "PUT",
           headers: {

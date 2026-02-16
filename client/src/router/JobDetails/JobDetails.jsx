@@ -27,11 +27,11 @@ const JobDetails = () => {
   const handleGetJobDetails = async () => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/getJobDetail/${params?.jid}`,
+        `https://job-junction-dpvo.onrender.com/api/job/getJobDetail/${params?.jid}`,
       );
 
       const data = await response.json();
-console.log('dettt',data);
+      console.log("dettt", data);
 
       setDet(data?.result[0]);
     } catch (error) {
@@ -42,7 +42,7 @@ console.log('dettt',data);
   const handleTempStop = async () => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/setTempStopHiring/${params?.jid}`,
+        `https://job-junction-dpvo.onrender.com/api/job/setTempStopHiring/${params?.jid}`,
         {
           method: "PUT",
           headers: {
@@ -52,11 +52,10 @@ console.log('dettt',data);
       );
 
       const data = await response.json();
-      console.log("dataaaaaa",data);
+      console.log("dataaaaaa", data);
 
       if (data?.success) {
-return        handleGetJobDetails()
-  ;      
+        return handleGetJobDetails();
       }
     } catch (error) {
       console.log(error);
@@ -65,14 +64,17 @@ return        handleGetJobDetails()
 
   const handleApply = async () => {
     try {
-      const response = await fetch(`http://localhost:1800/api/job/applyJob`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const response = await fetch(
+        `https://job-junction-dpvo.onrender.com/api/job/applyJob`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
 
-        body: JSON.stringify({ uid: loginData?.id, jid: params?.jid }),
-      });
+          body: JSON.stringify({ uid: loginData?.id, jid: params?.jid }),
+        },
+      );
 
       const data = await response.json(0);
 
@@ -88,11 +90,11 @@ return        handleGetJobDetails()
   const handleGetMYapplications = async () => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/getApplicationDetails/${loginData?.id}/${params?.jid}`,
+        `https://job-junction-dpvo.onrender.com/api/job/getApplicationDetails/${loginData?.id}/${params?.jid}`,
       );
 
       const data = await response.json();
-console.log('datassssss',data);
+      console.log("datassssss", data);
 
       if (data?.rows?.some((o) => o?.JobID == params?.jid)) {
         setAppliedBtn(true);
@@ -105,7 +107,7 @@ console.log('datassssss',data);
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/deleteJob/${params?.jid}`,
+        `https://job-junction-dpvo.onrender.com/api/job/deleteJob/${params?.jid}`,
         {
           method: "DELETE",
         },
@@ -125,7 +127,7 @@ console.log('datassssss',data);
   const getAllApplicants = async () => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/getAllApplicants/${params?.jid}`,
+        `https://job-junction-dpvo.onrender.com/api/job/getAllApplicants/${params?.jid}`,
       );
 
       const data = await response.json();
@@ -148,7 +150,7 @@ console.log('datassssss',data);
   const dontApply = async () => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/dontApply/${loginData?.id}/${params?.jid}`,
+        `https://job-junction-dpvo.onrender.com/api/job/dontApply/${loginData?.id}/${params?.jid}`,
         {
           method: "DELETE",
         },
@@ -170,7 +172,7 @@ console.log('datassssss',data);
   const handleCreateChat = async (rid) => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/message/createChat/${loginData?.id}/${rid}`,
+        `https://job-junction-dpvo.onrender.com/api/message/createChat/${loginData?.id}/${rid}`,
         {
           method: "POST",
           headers: {
@@ -198,7 +200,7 @@ console.log('datassssss',data);
   const handleStatus = async ({ status, aid, name }) => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/updateApplicationStatus`,
+        `https://job-junction-dpvo.onrender.com/api/job/updateApplicationStatus`,
         {
           method: "PUT",
           headers: {
@@ -257,7 +259,6 @@ console.log('datassssss',data);
           <button
             className={
               !det?.is_hiring
-
                 ? "tempr-btn btn btn-success"
                 : "btn btn-outline-secondary tempr-btn "
             }

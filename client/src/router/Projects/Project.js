@@ -11,7 +11,7 @@ export const MyProjectLogic = () => {
     const handleGetProject = async () => {
       try {
         const res = await fetch(
-          `http://localhost:1800/api/project/getProjects/${loginData?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/project/getProjects/${loginData?.id}`,
         );
 
         const data = await res.json();
@@ -27,7 +27,7 @@ export const MyProjectLogic = () => {
     const handleDeleteProject = async (pid) => {
       try {
         const res = await fetch(
-          `http://localhost:1800/api/project/deleteProject/${pid}`,
+          `https://job-junction-dpvo.onrender.com/api/project/deleteProject/${pid}`,
           {
             method: "DELETE",
           },
@@ -47,7 +47,7 @@ export const MyProjectLogic = () => {
     const hanldeprojectLike = async ({ pid, id }) => {
       try {
         const res = await fetch(
-          `http://localhost:1800/api/project/likeProject/${pid}/${id}`,
+          `https://job-junction-dpvo.onrender.com/api/project/likeProject/${pid}/${id}`,
           {
             method: "PUT",
             headers: {
@@ -69,7 +69,7 @@ export const MyProjectLogic = () => {
     const hanldeprojectDisLike = async ({ pid, id }) => {
       try {
         const res = await fetch(
-          `http://localhost:1800/api/project/disLikeProject/${pid}/${id}`,
+          `https://job-junction-dpvo.onrender.com/api/project/disLikeProject/${pid}/${id}`,
           {
             method: "PUT",
             headers: {

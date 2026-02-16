@@ -13,7 +13,7 @@ const EnterpriseJobs = () => {
   const handleGetOurJob = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/job/getOurJobs/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/job/getOurJobs/${loginData?.id}`,
       );
 
       const data = await res.json();

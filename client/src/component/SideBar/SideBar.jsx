@@ -71,10 +71,10 @@ const SideBar = () => {
   const getAllLikes = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/post/getAllLikes/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/post/getAllLikes/${loginData?.id}`,
       );
       const res2 = await fetch(
-        `http://localhost:1800/api/project/getAllProjLikes/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/project/getAllProjLikes/${loginData?.id}`,
       );
 
       const data = await res.json();
@@ -107,7 +107,7 @@ const SideBar = () => {
   const getViewers = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/user/getViewers/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/user/getViewers/${loginData?.id}`,
       );
 
       const data = await res.json();

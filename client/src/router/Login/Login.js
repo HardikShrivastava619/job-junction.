@@ -45,13 +45,16 @@ export const loginLogic = () => {
 
         const password = passwordRef?.current?.value;
 
-        const res = await fetch(`http://localhost:1800/api/user/login`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+        const res = await fetch(
+          `https://job-junction-dpvo.onrender.com/api/user/login`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email, password }),
           },
-          body: JSON.stringify({ email, password }),
-        });
+        );
         const data = await res.json();
 
         alert(data?.message);

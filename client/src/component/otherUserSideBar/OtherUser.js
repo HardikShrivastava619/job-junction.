@@ -11,7 +11,7 @@ export const OtherUserSidebarLogic = () => {
     const handleMore = async () => {
       try {
         const res = await fetch(
-          `http://localhost:1800/api/user/get_ourProfile/${params?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/user/get_ourProfile/${params?.id}`,
         );
         const data = await res.json();
 

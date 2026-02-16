@@ -88,14 +88,17 @@ const UserForm = ({ setBtnRemove }) => {
 
   const verifyEmail = async () => {
     try {
-      const res = await fetch(`http://localhost:1800/api/user/register`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const res = await fetch(
+        `https://job-junction-dpvo.onrender.com/api/user/register`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
 
-        body: JSON.stringify({ email }),
-      });
+          body: JSON.stringify({ email }),
+        },
+      );
 
       const data = await res.json();
 
@@ -120,7 +123,7 @@ const UserForm = ({ setBtnRemove }) => {
   const verifyOTP = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/user/verifyOTP/${email}`,
+        `https://job-junction-dpvo.onrender.com/api/user/verifyOTP/${email}`,
         {
           method: "PUT",
           headers: {
@@ -187,7 +190,7 @@ const UserForm = ({ setBtnRemove }) => {
       }
 
       const res = await fetch(
-        `http://localhost:1800/api/user/complete_profile/${email}`,
+        `https://job-junction-dpvo.onrender.com/api/user/complete_profile/${email}`,
         {
           method: "PUT",
           body: formData,
@@ -335,7 +338,7 @@ const UserForm = ({ setBtnRemove }) => {
   const handleSendOtpAgain = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/user/optAgain/${email}`,
+        `https://job-junction-dpvo.onrender.com/api/user/optAgain/${email}`,
         {
           method: "PUT",
           headers: {

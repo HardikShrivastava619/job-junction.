@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io(`http://localhost:1800`, {
+const socket = io(`https://job-junction-dpvo.onrender.com`, {
   transports: ["websocket"],
   withCredentials: true,
 });

@@ -12,7 +12,7 @@ const ApplicationPage = () => {
   const handleGetMYapplications = async () => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/getMyApplications/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/job/getMyApplications/${loginData?.id}`,
       );
       const data = await response.json();
 
@@ -25,7 +25,7 @@ const ApplicationPage = () => {
   const dontApply = async (aid) => {
     try {
       const response = await fetch(
-        `http://localhost:1800/api/job/cancelApplication/${aid}`,
+        `https://job-junction-dpvo.onrender.com/api/job/cancelApplication/${aid}`,
         {
           method: "DELETE",
         },

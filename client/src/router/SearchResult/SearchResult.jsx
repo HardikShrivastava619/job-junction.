@@ -37,7 +37,7 @@ const SearchResult = () => {
   const handleCreateChat = async (rid) => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/message/createChat/${loginData?.id}/${rid}`,
+        `https://job-junction-dpvo.onrender.com/api/message/createChat/${loginData?.id}/${rid}`,
         {
           method: "POST",
           headers: {

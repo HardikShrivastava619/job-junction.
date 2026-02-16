@@ -24,7 +24,7 @@ export const PostFormLogic = (setPostForm, handleGetPosts) => {
         });
 
         const res = await fetch(
-          `http://localhost:1800/api/post/savePost/${loginData?.id}`,
+          `https://job-junction-dpvo.onrender.com/api/post/savePost/${loginData?.id}`,
           {
             method: "POST",
             body: postData,

@@ -10,7 +10,7 @@ export const recentUploadLogic = () => {
   const handleGetPosts = async () => {
     try {
       const res = await fetch(
-        `http://localhost:1800/api/post/getPost/${loginData?.id}`,
+        `https://job-junction-dpvo.onrender.com/api/post/getPost/${loginData?.id}`,
       );
 
       const data = await res.json();
