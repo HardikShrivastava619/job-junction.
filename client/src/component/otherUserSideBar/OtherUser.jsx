@@ -25,7 +25,7 @@ const getFollowers = async () => {
 
 
 
-        const res = await fetch(`http://localhost:1800/api/follow/getAllFollowers/${params?.id}`) 
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/follow/getAllFollowers/${params?.id}`) 
 const data = await res.json()
 
 
@@ -54,7 +54,7 @@ const getFollowings = async () => {
 
 
 
-        const res = await fetch(`http://localhost:1800/api/follow/getAllFollowings/${params?.id}`) 
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/follow/getAllFollowings/${params?.id}`) 
 const data = await res.json()
 
 console.log(data);

@@ -20,7 +20,7 @@ useEffect(() => {
   const fetchAllLastMsgs = async () => {
     const updated = {};
     for (const user of uniqueById) {
-      const res = await fetch(`http://localhost:1800/api/message/lastMsg/${loginData?.id}/${user.id}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/message/lastMsg/${loginData?.id}/${user.id}`);
       const data = await res.json();
       
       updated[user?.id] = data?.rows

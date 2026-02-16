@@ -22,7 +22,7 @@ const [applicants,setApplicants] = useState([]);
 
 const handleGetMYapplications = async () => {
     try {
-    const response = await fetch(`http://localhost:1800/api/job/getMyApplications/${loginData?.id}`  );
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/getMyApplications/${loginData?.id}`  );
     const data = await response.json()
     
   
@@ -38,7 +38,7 @@ setApplicants(data?.rows)
 
 const dontApply = async (aid) => {
 try {
-    const response = await fetch(`http://localhost:1800/api/job/cancelApplication/${aid}`,{
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/cancelApplication/${aid}`,{
       method:'DELETE',
     }
   );

@@ -84,7 +84,7 @@ const navigate = useNavigate()
 
 const verifyEmail = async () => {
   try {
-    const res = await fetch(`http://localhost:1800/api/user/register`,{
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/register`,{
           method:'POST',
 headers:{
     "Content-Type": "application/json",
@@ -128,7 +128,7 @@ return setLoad(false)
 
 const verifyOTP = async () => {
   try {
-        const res = await fetch(`http://localhost:1800/api/user/verifyOTP/${email}`,{
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/verifyOTP/${email}`,{
           method:'PUT',
 headers:{
     "Content-Type": "application/json",
@@ -205,7 +205,7 @@ formData.append('role', 'Employee');
       formData.append('profile_photo', profile_photo);
     }
 
-    const res = await fetch(`http://localhost:1800/api/user/complete_profile/${email}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/complete_profile/${email}`, {
       method: 'PUT',
       body: formData,
     });
@@ -398,7 +398,7 @@ const handleSendOtpAgain = async () => {
     
      
      
-    const res = await fetch(`http://localhost:1800/api/user/optAgain/${email}` ,  {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/optAgain/${email}` ,  {
       method:'PUT',
       headers:{
         "Content-Type" : "application/json",

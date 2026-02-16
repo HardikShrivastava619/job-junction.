@@ -7,7 +7,7 @@ const handleUnfollow = async (id) => {
 
 
 
-    const res = await fetch(`http://localhost:1800/api/follow/unFollow/${id}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/follow/unFollow/${id}`, {
       method:'DELETE'
     } )
 

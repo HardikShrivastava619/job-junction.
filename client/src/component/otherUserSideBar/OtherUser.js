@@ -16,7 +16,7 @@ const params = useParams()
 
 
 
-        const res = await fetch(`http://localhost:1800/api/user/get_ourProfile/${params?.id}`)
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/get_ourProfile/${params?.id}`)
    const data = await res.json()
 
 

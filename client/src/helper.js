@@ -97,7 +97,7 @@ export   const convertName = (name) => {
 export const handleCreateNotification = async ({sid,rid,eid,type,action }) => {
   try {
         
-        const res = await fetch(`http://localhost:1800/api/notf/addNotif`, {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/notf/addNotif`, {
          method:'POST',
          headers:{
             'Content-Type' : 'application/json'
@@ -125,7 +125,7 @@ return data;
 export const handleGetNotification = async (uid) => {
   try {
         
-        const res = await fetch(`http://localhost:1800/api/notf/getNotif/${uid}`)
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/notf/getNotif/${uid}`)
 
 const data = await res.json();
 return data;

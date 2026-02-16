@@ -104,7 +104,7 @@ if (totEmp === null) {
 
 
 
-        const res = await fetch(`http://localhost:1800/api/user/complete_profile/${email}`, {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/complete_profile/${email}`, {
       method: 'PUT',
       body: formData,
     });
@@ -138,7 +138,7 @@ return navigate('/')
 
 const sendOtp = async () => {
   try {
-    const res = await fetch(`http://localhost:1800/api/user/register`,{
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/register`,{
           method:'POST',
 headers:{
     "Content-Type": "application/json",
@@ -178,7 +178,7 @@ return alert(data?.message)
 
 const verifEntpyOTP = async () => {
   try {
-        const res = await fetch(`http://localhost:1800/api/user/verifyOTP/${email}`,{
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/verifyOTP/${email}`,{
       method: 'PUT',
 headers:{
         'Content-Type':'application/json',

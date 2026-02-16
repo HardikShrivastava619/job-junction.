@@ -29,7 +29,7 @@ const params = useParams()
 
 const handleGetJobDetails = async () => {
   try {
-    const response = await fetch(`http://localhost:1800/api/job/getJobDetail/${params?.jid}`);
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/getJobDetail/${params?.jid}`);
 
     const data = await response.json()
 
@@ -50,7 +50,7 @@ const handleGetJobDetails = async () => {
 
 const handleTempStop = async () => {
   try {
-    const response = await fetch(`http://localhost:1800/api/job/setTempStopHiring/${params?.jid}`,{
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/setTempStopHiring/${params?.jid}`,{
       method:'PUT',
   headers:{
     "Content-Type": "application/json",
@@ -85,7 +85,7 @@ if (data?.success) {
 
 const handleApply = async () => {
   try {
-    const response = await fetch(`http://localhost:1800/api/job/applyJob`,{
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/applyJob`,{
       method:'POST',
   headers:{
     "Content-Type": "application/json",
@@ -120,7 +120,7 @@ if (data?.success) {
 
 const handleGetMYapplications = async () => {
     try {
-    const response = await fetch(`http://localhost:1800/api/job/getApplicationDetails/${loginData?.id}/${params?.jid}`  );
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/getApplicationDetails/${loginData?.id}/${params?.jid}`  );
 
 
 
@@ -146,7 +146,7 @@ if (data?.rows?.some(o=> o?.JobID == params?.jid)  ) {
 
 const handleDelete = async () => {
   try {
-    const response = await fetch(`http://localhost:1800/api/job/deleteJob/${params?.jid}`,{
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/deleteJob/${params?.jid}`,{
       method:'DELETE',
     }
   );
@@ -171,7 +171,7 @@ alert('Your Vacancy is Deleted From all Public Portals now')
 
 const getAllApplicants = async () => {
     try {
-    const response = await fetch(`http://localhost:1800/api/job/getAllApplicants/${params?.jid}`  );
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/getAllApplicants/${params?.jid}`  );
 
     const data = await response.json()
 
@@ -208,7 +208,7 @@ if (loginData?.role == 'Enterprise') {
 
 const dontApply = async () => {
 try {
-    const response = await fetch(`http://localhost:1800/api/job/dontApply/${loginData?.id}/${params?.jid}`,{
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/dontApply/${loginData?.id}/${params?.jid}`,{
       method:'DELETE',
     }
   );
@@ -241,7 +241,7 @@ const handleCreateChat = async (rid) => {
 
     
  
- const res = await  fetch(`http://localhost:1800/api/message/createChat/${loginData?.id}/${rid}`,{
+ const res = await  fetch(`${import.meta.env.VITE_API_URL}/api/message/createChat/${loginData?.id}/${rid}`,{
   method:'POST',
   headers:{
     'Content-Type':'application/json'
@@ -276,7 +276,7 @@ navigate('/chat')
 const handleStatus = async ({status ,aid , name}) => {
   try {
 
-        const response = await fetch(`http://localhost:1800/api/job/updateApplicationStatus`,{
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/job/updateApplicationStatus`,{
       method:'PUT',
 headers:{
       "Content-Type": "application/json",

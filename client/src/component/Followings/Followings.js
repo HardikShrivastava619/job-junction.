@@ -9,7 +9,7 @@ const handleUnfollow = async (id) => {
 
 
 
-    const res = await fetch(`http://localhost:1800/api/follow/unFollow/${id}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/follow/unFollow/${id}`, {
       method:'DELETE'
     } )
 
@@ -35,7 +35,7 @@ const handleGetName = async () => {
 
 
 
-    const res = await fetch(`http://localhost:1800/api/user/getUserName/${paramsId}`)
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/getUserName/${paramsId}`)
 const data = await res.json()
 
 setName(data?.name)

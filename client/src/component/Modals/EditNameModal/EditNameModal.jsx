@@ -33,7 +33,7 @@ e.preventDefault()
     formData.append('Title', title);
     
 
-    const res = await fetch(`http://localhost:1800/api/user/complete_profile/${loginData?.email}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/complete_profile/${loginData?.email}`, {
       method: 'PUT',
       body: formData,
     });
@@ -63,7 +63,7 @@ const handleMoreDetailsforINpt = async () => {
 
 
 
-        const res = await fetch(`http://localhost:1800/api/user/get_ourProfile/${paramsId}`)
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/get_ourProfile/${paramsId}`)
    const data = await res.json()
 
 

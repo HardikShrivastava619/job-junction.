@@ -27,7 +27,7 @@ photo.forEach((file) => {
   postData.append('photo_uploads', file);
 });
 
-            const res = await fetch(`http://localhost:1800/api/post/savePost/${loginData?.id}`,{
+            const res = await fetch(`${import.meta.env.VITE_API_URL}/api/post/savePost/${loginData?.id}`,{
                 method:"POST",
                 body :postData
             }  )

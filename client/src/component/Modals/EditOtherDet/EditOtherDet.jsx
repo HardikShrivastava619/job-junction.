@@ -80,7 +80,7 @@ formData.append('hq' ,hq )
 formData.append('total_employees',emp)
 
 
-    const res = await fetch(`http://localhost:1800/api/user/complete_profile/${loginData?.email}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/complete_profile/${loginData?.email}`, {
       method: 'PUT',
       body: formData,
     });

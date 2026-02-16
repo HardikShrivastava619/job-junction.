@@ -86,8 +86,8 @@ const [totLikes, setTotLikes] = useState(0)
   try {
     
 
-        const res = await fetch(`http://localhost:1800/api/post/getAllLikes/${loginData?.id}`)
-        const res2 = await fetch(`http://localhost:1800/api/project/getAllProjLikes/${loginData?.id}`)
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/post/getAllLikes/${loginData?.id}`)
+        const res2 = await fetch(`${import.meta.env.VITE_API_URL}/api/project/getAllProjLikes/${loginData?.id}`)
 
 
         const data = await res.json()
@@ -129,7 +129,7 @@ const [views,setViewers] = useState(0)
   try {
     
 
-        const res = await fetch(`http://localhost:1800/api/user/getViewers/${loginData?.id}`)
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/getViewers/${loginData?.id}`)
   
 
         const data = await res.json()

@@ -17,7 +17,7 @@ const handleGetPosts = async () => {
 
         
         
-const res = await fetch(`http://localhost:1800/api/post/getPost/${loginData?.id}`)
+const res = await fetch(`${import.meta.env.VITE_API_URL}/api/post/getPost/${loginData?.id}`)
 
 const data =await res.json()
 if (data?.success) {

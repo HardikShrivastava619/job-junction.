@@ -69,7 +69,7 @@ const searchCall = async (e) => {
   try {
 e.preventDefault()
 
-    const res = await fetch(`http://localhost:1800/api/user/getSearchedUser/${key}`)
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/getSearchedUser/${key}`)
 
 const data = await res.json();
 dispatch(searchSliceAction.saveSearchRes(data?.result))
@@ -100,7 +100,7 @@ func()
  const deleteNotf = async (nid) => {
 try {
         
-        const res = await fetch(`http://localhost:1800/api/notf/deleteNotif/${nid}`,{
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/notf/deleteNotif/${nid}`,{
           method:'DELETE'
         } )
 
@@ -123,7 +123,7 @@ return setNotifications(newArr)
  const addNotfSeen = async () => {
 try {
         
-        const res = await fetch(`http://localhost:1800/api/notf/addSeenNotif/${loginData?.id}`,{
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/notf/addSeenNotif/${loginData?.id}`,{
           method:'PUT',
           headers:{
             'Content-Type': 'application/json'
@@ -152,7 +152,7 @@ const addSelecNotfSeen = async (nid) => {
 try {
         
 
-        const res = await fetch(`http://localhost:1800/api/notf/addSeenSelcNotif/${nid}`,{
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/notf/addSeenSelcNotif/${nid}`,{
           method:'PUT',
           headers:{
             'Content-Type': 'application/json'

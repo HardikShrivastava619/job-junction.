@@ -24,7 +24,7 @@ const LikersModel = ({setLikersModal,likedModal,likers,recvid,cuurPost,hanldepos
  
  
  
-         const res = await fetch(`http://localhost:1800/api/follow/getAllFollowings/${logindata?.id}`) 
+         const res = await fetch(`${import.meta.env.VITE_API_URL}/api/follow/getAllFollowings/${logindata?.id}`) 
  const data = await res.json()
  
  
@@ -46,7 +46,7 @@ const LikersModel = ({setLikersModal,likedModal,likers,recvid,cuurPost,hanldepos
  const handleFollowBtn = async (followed_id) => {
      try {
  
-         const res = await fetch(`http://localhost:1800/api/follow/follow`,{
+         const res = await fetch(`${import.meta.env.VITE_API_URL}/api/follow/follow`,{
              method:'POST',
              headers:{
                  'Content-Type':'application/json'
