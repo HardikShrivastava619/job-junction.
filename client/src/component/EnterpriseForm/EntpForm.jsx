@@ -149,7 +149,6 @@ headers:{
 )
 
 const data = await res.json();
-console.log(data);
 
 
 if (data?.code === 'otp is sent') {
