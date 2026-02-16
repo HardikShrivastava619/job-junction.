@@ -390,6 +390,11 @@ setInputNum(p=>p-1)
   }
 }
 
+const apiUrl =import.meta.env.VITE_API_URL
+
+console.log("apiUrl",import.meta.env.VITE_API_URL
+  
+);
 
 
 const handleSendOtpAgain = async () => {
