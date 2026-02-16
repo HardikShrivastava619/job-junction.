@@ -87,16 +87,13 @@ export const handleCreateNotification = async ({
   action,
 }) => {
   try {
-    const res = await fetch(
-      `https://job-junction-dpvo.onrender.com/api/notf/addNotif`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ sid, rid, eid, type, action }),
+    const res = await fetch(`http://localhost:1800/api/notf/addNotif`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      body: JSON.stringify({ sid, rid, eid, type, action }),
+    });
 
     const data = await res.json();
 
@@ -110,9 +107,7 @@ export const handleCreateNotification = async ({
 
 export const handleGetNotification = async (uid) => {
   try {
-    const res = await fetch(
-      `https://job-junction-dpvo.onrender.com/api/notf/getNotif/${uid}`,
-    );
+    const res = await fetch(`http://localhost:1800/api/notf/getNotif/${uid}`);
 
     const data = await res.json();
     return data;

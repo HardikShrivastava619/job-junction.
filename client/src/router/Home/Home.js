@@ -11,15 +11,13 @@ export const HomeLogic = () => {
 
     const handleGetAllPosts = async () => {
       try {
-        const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/post/getAllPosts`,
-        );
+        const res = await fetch(`http://localhost:1800/api/post/getAllPosts`);
 
         const data = await res.json();
         const postsWithComments = await Promise.all(
           data?.posts?.map(async (p) => {
             const resC = await fetch(
-              `https://job-junction-dpvo.onrender.com/api/comment/getComment/${p.id}`,
+              `http://localhost:1800/api/comment/getComment/${p.id}`,
             );
             const comments = await resC.json();
             return { ...p, commentCount: comments?.rows?.length || 0 };
@@ -35,7 +33,7 @@ export const HomeLogic = () => {
     const hanldepostLike = async ({ pid, id, rid }) => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/post/likePost/${pid}/${id}`,
+          `http://localhost:1800/api/post/likePost/${pid}/${id}`,
           {
             method: "PUT",
             headers: {
@@ -76,7 +74,7 @@ export const HomeLogic = () => {
     const hanldepostDisLike = async ({ pid, id, rid }) => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/post/disLikePost/${pid}/${id}`,
+          `http://localhost:1800/api/post/disLikePost/${pid}/${id}`,
           {
             method: "PUT",
             headers: {
@@ -112,7 +110,7 @@ export const HomeLogic = () => {
     const hanldeGetComment = async (pid) => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/comment/getComment/${pid}`,
+          `http://localhost:1800/api/comment/getComment/${pid}`,
         );
 
         const data = await res.json();
@@ -128,7 +126,7 @@ export const HomeLogic = () => {
     const hanldeComment = async ({ pid, text, uid }) => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/comment/createComment/${loginData?.id}/${pid}`,
+          `http://localhost:1800/api/comment/createComment/${loginData?.id}/${pid}`,
           {
             method: "POST",
             headers: {
@@ -160,7 +158,7 @@ export const HomeLogic = () => {
     const hanldedeleteComment = async ({ cid, pid }) => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/comment/deleteComment/${cid}/${pid} `,
+          `http://localhost:1800/api/comment/deleteComment/${cid}/${pid} `,
           {
             method: "DELETE",
           },
@@ -198,7 +196,7 @@ export const HomeLogic = () => {
     const getFollowers = async () => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/follow/getAllFollowings/${loginData?.id}`,
+          `http://localhost:1800/api/follow/getAllFollowings/${loginData?.id}`,
         );
 
         const data = await res.json();

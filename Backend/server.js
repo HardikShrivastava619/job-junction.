@@ -33,14 +33,14 @@ const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
 
 const io = new Server(server, {
   cors: {
-    origin: allowedOrigin,
-    methods: ["GET", "POST"]
+    origin: allowedOrigin, 
+    methods: ["GET", "POST",]
   }
 });
 
 const corsOptions = {
   origin: allowedOrigin,
-  methods: "GET,PUT,POST,DELETE",
+  methods: "GET,PUT,POST,DELETE", 
   credentials: true,
 };
 

@@ -12,9 +12,7 @@ const Jobs = () => {
 
   const handleGetOurJob = async () => {
     try {
-      const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/job/getAllJobs`,
-      );
+      const res = await fetch(`http://localhost:1800/api/job/getAllJobs`);
 
       const data = await res.json();
 

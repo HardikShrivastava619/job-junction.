@@ -35,7 +35,7 @@ export const jobFormLogic = () => {
 
       try {
         const response = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/job/createJob/${loginData?.id}`,
+          `http://localhost:1800/api/job/createJob/${loginData?.id}`,
           {
             method: "POST",
             headers: {

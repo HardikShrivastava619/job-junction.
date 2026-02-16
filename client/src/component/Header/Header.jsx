@@ -64,7 +64,7 @@ const Header = () => {
       e.preventDefault();
 
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/user/getSearchedUser/${key}`,
+        `http://localhost:1800/api/user/getSearchedUser/${key}`,
       );
 
       const data = await res.json();
@@ -89,7 +89,7 @@ const Header = () => {
   const deleteNotf = async (nid) => {
     try {
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/notf/deleteNotif/${nid}`,
+        `http://localhost:1800/api/notf/deleteNotif/${nid}`,
         {
           method: "DELETE",
         },
@@ -109,7 +109,7 @@ const Header = () => {
   const addNotfSeen = async () => {
     try {
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/notf/addSeenNotif/${loginData?.id}`,
+        `http://localhost:1800/api/notf/addSeenNotif/${loginData?.id}`,
         {
           method: "PUT",
           headers: {
@@ -133,7 +133,7 @@ const Header = () => {
   const addSelecNotfSeen = async (nid) => {
     try {
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/notf/addSeenSelcNotif/${nid}`,
+        `http://localhost:1800/api/notf/addSeenSelcNotif/${nid}`,
         {
           method: "PUT",
           headers: {

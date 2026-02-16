@@ -3,7 +3,7 @@ export const followersLogic = (getFollowers, checkFollows) => {
     const handleUnfollow = async (id) => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/follow/unFollow/${id}`,
+          `http://localhost:1800/api/follow/unFollow/${id}`,
           {
             method: "DELETE",
           },

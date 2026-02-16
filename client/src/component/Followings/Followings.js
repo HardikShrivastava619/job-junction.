@@ -5,7 +5,7 @@ export const followeingsLogic = (getFollowers, paramsId) => {
     const handleUnfollow = async (id) => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/follow/unFollow/${id}`,
+          `http://localhost:1800/api/follow/unFollow/${id}`,
           {
             method: "DELETE",
           },
@@ -24,7 +24,7 @@ export const followeingsLogic = (getFollowers, paramsId) => {
     const handleGetName = async () => {
       try {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/user/getUserName/${paramsId}`,
+          `http://localhost:1800/api/user/getUserName/${paramsId}`,
         );
         const data = await res.json();
 

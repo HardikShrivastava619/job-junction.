@@ -360,7 +360,7 @@ return (
 </nav>
 <div className='chat-body'  >
 
-{otherUserTyping ? <div    className='msg-div' style={{border:'1px solid red'}}   > 
+{otherUserTyping ? <div    className='msg-div'    > 
   <img src={  currChatingUser?.profile_photo ?  currChatingUser?.profile_photo    :  <></>  }   className='msg-img'  alt="" />
     <BsFillChatTextFill  className='BsFillChatTextFill '  />
 <small className='text-secondary' > </small>

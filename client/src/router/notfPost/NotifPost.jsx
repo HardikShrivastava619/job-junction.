@@ -46,7 +46,7 @@ const NotifPost = () => {
       const responses = await Promise.all(
         likerIds.map(async (m) => {
           const res = await fetch(
-            `https://job-junction-dpvo.onrender.com/api/user/get_ourProfile/${m}`,
+            `http://localhost:1800/api/user/get_ourProfile/${m}`,
           );
           return await res.json();
         }),

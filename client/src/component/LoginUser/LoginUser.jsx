@@ -46,7 +46,7 @@ const LoginUser = () => {
   const getFollowers = async () => {
     try {
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/follow/getAllFollowers/${loginData?.id}`,
+        `http://localhost:1800/api/follow/getAllFollowers/${loginData?.id}`,
       );
       const data = await res.json();
 
@@ -63,7 +63,7 @@ const LoginUser = () => {
   const getFollowings = async () => {
     try {
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/follow/getAllFollowings/${loginData?.id}`,
+        `http://localhost:1800/api/follow/getAllFollowings/${loginData?.id}`,
       );
       const data = await res.json();
 

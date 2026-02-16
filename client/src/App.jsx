@@ -92,12 +92,10 @@ const token = JSON.parse(localStorage.getItem('jobJuncToken'))
 
 useEffect(()=>{
 if (token) {
-  console.log('jai ram ji ki');
+  console.log("token",token);
   
 }
 else{
-  console.log('jai ram ji ki bolo har bar');
-console.log("entryroutes",isEntryroutes)
   if (!isEntryroutes) {
     setLoad(true)
   

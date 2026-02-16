@@ -211,7 +211,7 @@ catch (error) {
 
    </>:   page === 2 ?      <> 
  <div  className='proff-register_inputs-container'>
-<textarea name="" id="" className='form-control'  style={{border:'2px solid #9370db'}}  rows='6'  onChange={(e)=>{setDescription(e?.target?.value)}} ></textarea>
+<textarea name="" id="" className='form-control'  placeholder='Describe Job or Duties' style={{border:'2px solid #9370db'}}  rows='6'  onChange={(e)=>{setDescription(e?.target?.value)}} ></textarea>
 
  </div>
 

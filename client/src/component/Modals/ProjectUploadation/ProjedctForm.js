@@ -37,7 +37,7 @@ export const ProjectFormLogic = (setProjectForm, handleGetProject) => {
         });
 
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/project/saveProject/${loginData?.id}`,
+          `http://localhost:1800/api/project/saveProject/${loginData?.id}`,
           {
             method: "POST",
             body: postData,

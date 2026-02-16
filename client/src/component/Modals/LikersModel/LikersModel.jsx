@@ -21,7 +21,7 @@ const LikersModel = ({
   const getFollowings = async () => {
     try {
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/follow/getAllFollowings/${logindata?.id}`,
+        `http://localhost:1800/api/follow/getAllFollowings/${logindata?.id}`,
       );
       const data = await res.json();
 
@@ -37,16 +37,13 @@ const LikersModel = ({
 
   const handleFollowBtn = async (followed_id) => {
     try {
-      const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/follow/follow`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ followers_id, followed_id }),
+      const res = await fetch(`http://localhost:1800/api/follow/follow`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify({ followers_id, followed_id }),
+      });
       const data = await res.json();
 
       if (data?.success) {

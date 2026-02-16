@@ -136,7 +136,7 @@ const EntpForm = ({ setBtnRemove }) => {
       }
 
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/user/complete_profile/${email}`,
+        `http://localhost:1800/api/user/complete_profile/${email}`,
         {
           method: "PUT",
           body: formData,
@@ -146,11 +146,11 @@ const EntpForm = ({ setBtnRemove }) => {
       const data = await res.json();
 
       if (data?.success) {
+
         alert(data?.message);
         dispatch(loginSliceAction.loginUser(data?.updatedUser));
-        localStorage.setItem("jobJuncToken", JSON.stringify(data?.token));
-
-        return navigate("/");
+      
+        return navigate("/login");
       }
 
       if (data?.success === false) {
@@ -161,10 +161,9 @@ const EntpForm = ({ setBtnRemove }) => {
     }
   };
 
-
   const sendOtp = async () => {
     try {
-      const res = await fetch(`/api/user/register`, {
+      const res = await fetch(`http://localhost:1800/api/user/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -174,6 +173,7 @@ const EntpForm = ({ setBtnRemove }) => {
       });
 
       const data = await res.json();
+console.log("data",data);
 
       if (data?.code === "otp is sent") {
         setBox1(!box1);
@@ -196,7 +196,7 @@ const EntpForm = ({ setBtnRemove }) => {
   const verifEntpyOTP = async () => {
     try {
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/user/verifyOTP/${email}`,
+        `http://localhost:1800/api/user/verifyOTP/${email}`,
         {
           method: "PUT",
           headers: {

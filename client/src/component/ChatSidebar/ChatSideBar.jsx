@@ -23,7 +23,7 @@ const ChatSideBar = ({
       const updated = {};
       for (const user of uniqueById) {
         const res = await fetch(
-          `https://job-junction-dpvo.onrender.com/api/message/lastMsg/${loginData?.id}/${user.id}`,
+          `http://localhost:1800/api/message/lastMsg/${loginData?.id}/${user.id}`,
         );
         const data = await res.json();
 

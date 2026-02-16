@@ -68,7 +68,7 @@ const EditOtherDet = ({ edit, handleMoreDetails, setEditProf, editProf }) => {
       formData.append("total_employees", emp);
 
       const res = await fetch(
-        `https://job-junction-dpvo.onrender.com/api/user/complete_profile/${loginData?.email}`,
+        `http://localhost:1800/api/user/complete_profile/${loginData?.email}`,
         {
           method: "PUT",
           body: formData,
